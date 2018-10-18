@@ -6,6 +6,7 @@
 Welcome to wgid1's documentation!
 =================================
 
+.. include:: ../README.md
 .. toctree::
    :maxdepth: 2
 
