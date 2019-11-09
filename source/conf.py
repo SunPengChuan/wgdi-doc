@@ -19,8 +19,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'wgid1'
-copyright = '2018, PengChuan Sun'
+project = 'WGDI'
+copyright = '2019, PengChuan Sun'
 author = 'PengChuan Sun'
 
 # The short X.Y version

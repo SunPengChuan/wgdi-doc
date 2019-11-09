@@ -1,0 +1,312 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>retain &mdash; WGDI latest documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="correspondence" href="c.html" />
+    <link rel="prev" title="kspeaks" href="kp.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> WGDI
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="use.html">usage</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="use.html#common-file">Common file</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="use.html#contents">Contents</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="d.html">dotplot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cl.html">colinearscan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ks.html">ks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="a.html">align</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bk.html">blockks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ci.html">circos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kp.html">kspeaks</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">retain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="c.html">correspondence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pf.html">pf</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bi.html">bi</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="use.html#convenient">Convenient</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">WGDI</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="use.html">usage</a> &raquo;</li>
+        
+      <li>retain</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/r.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="retain">
+<h1>retain<a class="headerlink" href="#retain" title="Permalink to this headline">¶</a></h1>
+<p>retain is show subgenomes in gene retention or genome fractionation.</p>
+<p class="rubric">Parameters</p>
+<p>Use command to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-r</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">retain.conf</span></code> Take out the parameter file.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">retain</span><span class="p">]</span>
+<span class="n">alignment</span> <span class="o">=</span> <span class="n">alignment</span> <span class="n">file</span>
+<span class="n">gff</span> <span class="o">=</span> <span class="n">gff</span> <span class="n">file</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="n">red</span><span class="p">,</span><span class="n">blue</span><span class="p">,</span><span class="n">green</span>
+<span class="n">refgenome</span> <span class="o">=</span> <span class="n">shorthand</span>
+<span class="n">figsize</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span><span class="mi">12</span>
+<span class="n">step</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">ylabel</span> <span class="o">=</span> <span class="n">y</span> <span class="n">label</span>
+<span class="n">savefile</span> <span class="o">=</span> <span class="n">retain</span> <span class="n">file</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="n">figurefile</span> <span class="o">=</span> <span class="n">result</span><span class="p">(</span><span class="o">.</span><span class="n">png</span><span class="p">,</span><span class="o">.</span><span class="n">pdf</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 84%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Parameters</p></td>
+<td><p>Standards and instructions</p></td>
+</tr>
+<tr class="row-even"><td><p>alignment</p></td>
+<td><p>Type:str     Default: -</p>
+<blockquote>
+<div><p>Colinear List.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><p>colors</p></td>
+<td><p>Type:{red,blue,green}     Default:-</p>
+<blockquote>
+<div><p>Set multiple sets of colors based on grouping, split with a comma.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td><p>refgenome</p></td>
+<td><p>Type:str     Default: -</p>
+<blockquote>
+<div><p>A short handbook of reference species.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><p>figsize</p></td>
+<td><p>Type:str     Default: -</p>
+<blockquote>
+<div><p>The size ratio of the image.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td><p>step</p></td>
+<td><p>Type:int     Default: -</p>
+<blockquote>
+<div><p>The size of the sliding window.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><p>ylabel</p></td>
+<td><p>Type:str     Default: -</p>
+<blockquote>
+<div><p>The y-axis label of the picture.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td><p>savefile</p></td>
+<td><p>Type:str     Default: -</p>
+<blockquote>
+<div><p>Results of the drawing.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><p>figurefile</p></td>
+<td><p>Type:{*.png, *.pdf}     Default: *.png</p>
+<blockquote>
+<div><p>Save pictures support png, PDF formats.</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p class="rubric">Modify</p>
+<p>Modify the parameters that are right for you to run.</p>
+<p class="rubric">Begin</p>
+<p>Use <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-r</span> <span class="pre">retain.conf</span></code> to run the parameter file and output the results you want.</p>
+<img alt="_images/1.png" class="align-left" src="_images/1.png" />
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="c.html" class="btn btn-neutral float-right" title="correspondence" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="kp.html" class="btn btn-neutral float-left" title="kspeaks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, PengChuan Sun
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

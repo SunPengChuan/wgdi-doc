@@ -1,0 +1,321 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>circos &mdash; WGDI latest documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="kspeaks" href="kp.html" />
+    <link rel="prev" title="blockks" href="bk.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> WGDI
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="use.html">usage</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="use.html#common-file">Common file</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="use.html#contents">Contents</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="d.html">dotplot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cl.html">colinearscan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ks.html">ks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="a.html">align</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bk.html">blockks</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">circos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kp.html">kspeaks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="r.html">retain</a></li>
+<li class="toctree-l3"><a class="reference internal" href="c.html">correspondence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pf.html">pf</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bi.html">bi</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="use.html#convenient">Convenient</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">WGDI</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="use.html">usage</a> &raquo;</li>
+        
+      <li>circos</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/ci.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="circos">
+<h1>circos<a class="headerlink" href="#circos" title="Permalink to this headline">¶</a></h1>
+<p>circos is a simple way to run circos.</p>
+<p class="rubric">Parameters</p>
+<p>Use command to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-ci</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">circos.conf</span></code> Take out the parameter file.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">circos</span><span class="p">]</span>
+<span class="n">gff</span> <span class="o">=</span>  <span class="n">gff</span> <span class="n">file</span>
+<span class="n">lens</span> <span class="o">=</span> <span class="n">lens</span> <span class="n">file</span>
+<span class="n">radius</span> <span class="o">=</span> <span class="mf">0.2</span>
+<span class="n">angle_gap</span> <span class="o">=</span> <span class="mf">0.05</span>
+<span class="n">ring_width</span><span class="o">=</span> <span class="mf">0.015</span>
+<span class="n">colors</span>  <span class="o">=</span> <span class="n">color</span> <span class="n">confige</span><span class="p">(</span><span class="nb">chr</span><span class="p">:</span><span class="n">color</span><span class="p">,</span><span class="nb">chr</span><span class="p">:</span><span class="n">color</span><span class="p">)</span>
+<span class="n">position</span> <span class="o">=</span> <span class="n">end</span>
+<span class="n">alignment</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">txt</span>
+<span class="n">chr_label</span> <span class="o">=</span> <span class="n">Shorthand</span>
+<span class="n">figsize</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span><span class="mi">10</span>
+<span class="n">savefig</span> <span class="o">=</span> <span class="n">saving</span> <span class="n">image</span><span class="p">(</span><span class="o">.</span><span class="n">png</span><span class="p">,</span><span class="o">.</span><span class="n">pdf</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 85%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Parameters</p></td>
+<td><p>Standards and instructions</p></td>
+</tr>
+<tr class="row-even"><td><p>radius</p></td>
+<td><p>Type: float    Default: 0.2</p>
+<blockquote>
+<div><p>Radius, value between 0-1.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><p>angle_gap</p></td>
+<td><p>Type: float    Default: 0.05</p>
+<blockquote>
+<div><p>Gap between chromosomes.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td><p>ring_width</p></td>
+<td><p>Type: float    Default: 0.015</p>
+<blockquote>
+<div><p>The width of the ring.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><p>colors</p></td>
+<td><p>Type: str    Default: -</p>
+<blockquote>
+<div><p>Set multiple sets of colors based on grouping, split with a comma.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td><p>position</p></td>
+<td><p>Type: {start,order,end}    Default: order</p>
+<blockquote>
+<div><p>The position of the gene corresponds to the gff file.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><p>alignment</p></td>
+<td><p>Type: str    Default: -</p>
+<blockquote>
+<div><p>Colinear List.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td><p>chr_label</p></td>
+<td><p>Type: str    Default: Shorthand</p>
+<blockquote>
+<div><p>A shorthand for chromosomes.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><p>figsize</p></td>
+<td><p>Type: int,int    Default: 10,10</p>
+<blockquote>
+<div><p>The size ratio of the image.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td><p>savefile</p></td>
+<td><p>Type: {*.png, *.pdf}    Default: *.png</p>
+<blockquote>
+<div><p>Save pictures support png, PDF formats.</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<p class="rubric">Modify</p>
+<p>Modify the parameters that are right for you to run.</p>
+<p class="rubric">Begin</p>
+<p>Use <cite>wgdi –ci circos.conf</cite> to run the parameter file and output the results you want.</p>
+<img alt="_images/1.png" class="align-left" src="_images/1.png" />
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="kp.html" class="btn btn-neutral float-right" title="kspeaks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bk.html" class="btn btn-neutral float-left" title="blockks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, PengChuan Sun
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
