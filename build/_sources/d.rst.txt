@@ -5,7 +5,9 @@ dotplot is show homologous gene dotplot.
   
 .. rubric:: Parameters
 
-Use command to enter the folder ``wgdi -d ? > dotplot.conf`` Take out the parameter file.::
+Use command to enter the folder ``wgdi -d ? > dotplot.conf`` Take out the parameter file.
+
+.. code-block:: ruby
 
    [dotplot]
    blast= blast file
@@ -22,7 +24,7 @@ Use command to enter the folder ``wgdi -d ? > dotplot.conf`` Take out the parame
    position = order
    markersize = 0.5
    figsize = 10,10
-   savefile = savefile(. png, .pdf)
+   savefile = savefile(.png, .pdf)
 
 .. tabularcolumns:: column spec
 
@@ -35,17 +37,17 @@ multiple          Type: int    Default: 1
 ---------------- ------------------------------------------------------------------------         
 score             Type: int    Default: 100
 				  
-                     Score value in blast results.
+                     Score value in the blast results.
 ---------------- ------------------------------------------------------------------------
 evalue            Type: float    Default: 1e-5
 
-                     evalue value in blast result.
+                     Evalue value in the blast result.
 ---------------- ------------------------------------------------------------------------   
 repnum            Type: int    Default: 20
-				  
-                     The maximum number of homologous genes is allowed 
-				  
-				  to be removed more than part of the population.
+	
+                     The maximum number of homologous genes is allowed to be copied,
+					 
+				  the rest removed.					  
 ---------------- ------------------------------------------------------------------------  
 position          Type: {start,order,end}    Default: order
 
@@ -57,11 +59,11 @@ markersiz         Type: float    Default: 0.5
 ---------------- ------------------------------------------------------------------------
 figsize           Type: int,int    Default: 10,10
 				  
-                     Controls the proportion of the size of the saved picture.
+                     Control the proportion of the size of the saved picture.
 ---------------- ------------------------------------------------------------------------  
 savefile          Type: {\*.png,\*.pdf}    Default: \*.png
 
-                     Save pictures support png, PDF, svg formats.
+                     Save pictures support png, pdf, svg formats.
 ================ ========================================================================
 
 .. rubric:: Example

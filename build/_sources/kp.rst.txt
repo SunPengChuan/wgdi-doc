@@ -75,7 +75,7 @@ savefig           Type:{\*.png, \*.pdf}     Default: \*.png
                      
 					 Save pictures support png, PDF formats.
 ---------------- ------------------------------------------------------------------------	  
-savefile          Type:\*.csv     Default: \*.csv 
+savefile          Type:*.csv     Default: \*.csv 
                          
 				     Save pictures support csv formats.
 ================ ========================================================================

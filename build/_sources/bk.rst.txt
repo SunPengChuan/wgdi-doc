@@ -5,24 +5,23 @@ blockks is show Ks of blocks in a dotplot.
   
 .. rubric:: Parameters
 
-Use command to enter the folder ``wgdi -bk ? > blockks.conf`` Take out the parameter file.::
+Use command to enter the folder ``wgdi -bk ? > blockks.conf`` Take out the parameter file.
+
+.. code-block:: ruby
 
    [blockks]
-   blast = blast file
-   gff1 = gff1 file
-   gff2 = gff2 file
    lens1 = lens1 file
    lens2 = lens2 file
    genome1_ name = Genome1 name
    genome2_ name = Genome2 name
-   colinearity = colinearity(colinearscan,mcscanx)
-   ks= ks file
+   blockinfo = block information (*.csv)
+   pvalue = 0.05
+   tandem = true
    markersize = 1
    area = 0,1
    block_length = int number
-   position = order
    figsize = 10,10 
-   savefile = savefile(.png,.pdf)
+   savefile = save image(.png,.pdf)
 
 .. tabularcolumns:: column spec
 
@@ -55,7 +54,7 @@ position          Type: str    Default: order
 ---------------- ------------------------------------------------------------------------
 figsize           Type: int,int    Default: 10,10
 				  
-                     Controls the proportion of the size of the saved picture.
+                     Control the proportion of the size of the saved picture.
 ---------------- ------------------------------------------------------------------------
 savefile          Type: {\*.png, \*.pdf}    Default: \*.png
                      

@@ -31,15 +31,16 @@ dir               Type: str    Default: -
 ---------------- ------------------------------------------------------------------------ 
 evalue            Type: float    Default: 1e-5
 
-                     evalue value in blast result.
+                     Evalue in the blast result.
 ---------------- ------------------------------------------------------------------------         
 score             Type: int    Default: 100
 				  
-                     Score value in blast results.
+                     Score value in the blast results.
 ---------------- ------------------------------------------------------------------------  
 mg                Type: int,int    Default: 50,50
 
-                     This is the parameter of the colinearscan program mg.
+					The maximum clearance length (mg) is an important parameter for
+				  detecting collinear regions.
 ---------------- ------------------------------------------------------------------------ 
 repnum            Type: int    Default: 20
 				  

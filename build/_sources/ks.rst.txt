@@ -25,7 +25,7 @@ cds_file          Type: str     Default: -
 ---------------- ------------------------------------------------------------------------
 pep_file          Type:str     Default:- 
                   
-				     A protein file for one or more genomes. non-essential files, if you 
+					A protein file for one or more genomes. non-essential files, if you 
 					 
 				  do not write this parameter, Then this file will be translated through 
 				  
@@ -37,9 +37,9 @@ align_software    Type:{muscle,mafft}     Default: muscle
 ---------------- ------------------------------------------------------------------------
 pairs_file        Type:str     Default: -
 
-                     The same gene pairs of ks need to be calculated, either by pressing, 
+					The same gene pairs of ks need to be calculated, either by pressing, 
 				  
-				  or separating the list, or as the output of ColinearScan.
+				   or separating the list, or as the output of ColinearScan.			
 ---------------- ------------------------------------------------------------------------
 ks_file           Type:str     Default: -
 

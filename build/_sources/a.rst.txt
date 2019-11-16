@@ -42,7 +42,7 @@ colors		      Type: {red,blue,green}    Default: red,blue,green
 ---------------- ------------------------------------------------------------------------
 figsize           Type: int,int    Default: 10,10
 				  
-                     Controls the proportion of the size of the saved picture.
+                     Control the proportion of the size of the saved picture.
 ---------------- ------------------------------------------------------------------------
 savefile          Type: str    Default: \*.csv
 
@@ -56,7 +56,7 @@ block_list        Type: str    Default: -
 
                      Add a class column to the blockinfo file to group and express 
 					 
-			      different groups with Raab numbers.     
+			      different groups with different numbers.     
 ---------------- ------------------------------------------------------------------------
 blockinfo         Type:str     Default:- 
                      
