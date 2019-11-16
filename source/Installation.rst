@@ -58,7 +58,7 @@ Nucleic Acids Res. 34, W609-W612.
 
 After you download and install the above package. Go to the installation location of **WGDI**, find the **conf.ini** located in the wgdi folder, and change the location of its module to the location where you installed the module.
 
-.\\Python\\Python37-32\\Lib\\site-packages\\wgdi\\conf.ini::
+.\\Python\\Lib\\site-packages\\wgdi\\conf.ini::
 
    [ini]
    mafft_path = C:\bio\mafft-win\mafft.bat
