@@ -21,7 +21,7 @@ Use command to enter the folder ``wgdi -bk ? > blockks.conf`` Take out the param
    area = 0,1
    block_length = int number
    figsize = 10,10 
-   savefile = save image(.png,.pdf)
+   savefile = save image(.png,.pdf,.svg)
 
 .. tabularcolumns:: column spec
 
@@ -56,9 +56,9 @@ figsize           Type: int,int    Default: 10,10
 				  
                      Control the proportion of the size of the saved picture.
 ---------------- ------------------------------------------------------------------------
-savefile          Type: {\*.png, \*.pdf}    Default: \*.png
+savefile          Type: {\*.png, \*.pdf,\*.svg}    Default: \*.png
                      
-					 Save pictures support png, PDF formats.
+					 Save pictures support png, pdf，svg formats.
 ================ ========================================================================
 
 .. rubric:: Example
