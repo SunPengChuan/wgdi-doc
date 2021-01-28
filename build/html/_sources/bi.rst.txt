@@ -16,7 +16,7 @@ Use command to enter the folder ``wgdi -bk ? > blockks.conf`` Take out the param
    colinearity = colinearity file
    score = 100
    evalue = 1e-5
-   repnum = 30
+   repeat_number = 30
    position = order
    ks = ks file
    ks_col = ka_ NG86
@@ -39,7 +39,7 @@ evalue            Type: float    Default: 1e-5
 
 					Evalue value in blast result.			 
 ---------------- ------------------------------------------------------------------------
-repnum            Type: int    Default: 20
+repeat_number            Type: int    Default: 20
 				  
 					The maximum number of homologous genes is allowed 
 				  

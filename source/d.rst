@@ -20,7 +20,7 @@ Use command to enter the folder ``wgdi -d ? > dotplot.conf`` Take out the parame
    multiple  = 1
    score = 100
    evalue = 1e-5
-   repnum = 20
+   repeat_number = 20
    position = order
    markersize = 0.5
    figsize = 10,10
@@ -43,7 +43,7 @@ evalue            Type: float    Default: 1e-5
 
                      Evalue value in the blast result.
 ---------------- ------------------------------------------------------------------------   
-repnum            Type: int    Default: 20
+repeat_number            Type: int    Default: 20
 	
                      The maximum number of homologous genes is allowed to be copied,
 					 

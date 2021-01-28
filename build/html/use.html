@@ -1,38 +1,41 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>usage &mdash; WGDI latest documentation</title>
   
 
   
-  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
   
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="dotplot" href="d.html" />
@@ -59,6 +62,10 @@
           
             
             
+              <div class="version">
+                0.4.4
+              </div>
+            
           
 
           
@@ -73,6 +80,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -87,7 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#common-file">Common file</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#contents">Contents</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="d.html">dotplot</a></li>
-<li class="toctree-l3"><a class="reference internal" href="cl.html">colinearscan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="icl.html">colinearscan</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ks.html">ks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="a.html">align</a></li>
 <li class="toctree-l3"><a class="reference internal" href="bk.html">blockks</a></li>
@@ -107,6 +115,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -141,18 +150,20 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>usage</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/use.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -174,7 +185,7 @@
 <div class="section" id="common-file">
 <h2>Common file<a class="headerlink" href="#common-file" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a href="#id1"><span class="problematic" id="id2">*</span></a>.conf</p></li>
+<li><p>conf</p></li>
 </ul>
 <p>The .conf file contains the parameters required for the corresponding operation, which are read when wGDI is performed.
 Using <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-*</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">*.conf</span></code> to generate needs to be in the same directory as the file mentioned in the parameter.
@@ -266,7 +277,7 @@ These parameters will be used to label the picture for your convenience.</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="d.html">dotplot</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cl.html">colinearscan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="icl.html">colinearscan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ks.html">ks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="a.html">align</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bk.html">blockks</a></li>
@@ -287,7 +298,6 @@ These parameters will be used to label the picture for your convenience.</p>
 <li><p>When a folder runs <strong>WGDI</strong>, <strong>WGDI</strong> automatically generates results for you in the background, and you can exit the folder and go to the next folder to start working.</p></li>
 <li><p><strong>WGDI</strong> performs the <strong>.conf</strong> file for the current folder, so you can copy the <strong>.conf</strong> file in bulk and make parameter modifications that apply to the target folder.</p></li>
 </ul>
-<a class="reference internal image-reference" href="_images/4.png"><img alt="_images/4.png" src="_images/4.png" style="width: 160.2px; height: 149.1px;" /></a>
 </div>
 </div>
 
@@ -296,29 +306,29 @@ These parameters will be used to label the picture for your convenience.</p>
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="d.html" class="btn btn-neutral float-right" title="dotplot" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="Installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="d.html" class="btn btn-neutral float-right" title="dotplot" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2019, PengChuan Sun
+        &#169; Copyright 2021, PengChuan Sun.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
@@ -326,7 +336,6 @@ These parameters will be used to label the picture for your convenience.</p>
 
   </div>
   
-
 
   <script type="text/javascript">
       jQuery(function () {

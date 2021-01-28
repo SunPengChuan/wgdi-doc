@@ -11,16 +11,6 @@ Description
 
 .. image :: _static/wgdi.png
 
-.. code-block:: ruby
-
-       ╔════(-cl)════/Colinearity/═══╗        ╔══(-kp)(-pf)═══/Dating/  
-       ║                    ⇓        ⇓        ║
-   /Geonmic data/         /Ks/═════════/Blockinfo/              ╔════(-cir)══/Circos/
-       ║                             ⇑     |  ║                 ║
-       ╚════(-d)═══════/Dotplot/═════╝     |  ╚══(-c)(-a)═════/Table/═══(-r)═══/Retention and loss/
-                            ↑              |                    ║
-                            └-----(-bk)----┘                    ╚═════════════/Pindex/
-
 
 This is a gold standard for complex genomic analysis, including the construction of genomic homology maps, event-related collinear gene mapping, repeated gene classification,  molecular evolution distance estimation, and the determination and correction of evolution rate differences, etc.
 Finely identify the whole genome duplication events and generate the genomic homology tables.
@@ -44,5 +34,5 @@ When you have used **WGDI**, you have good suggestions or ideas to email the |au
 .. _author: sunpengchuan@gmail.com
 
 .. |github| replace:: github
-.. _github: https://github.com/101121/WGDI-
+.. _github: https://github.com/SunPengChuan/wgdi-doc
 

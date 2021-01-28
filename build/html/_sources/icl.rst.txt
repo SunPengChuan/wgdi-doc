@@ -27,11 +27,11 @@ Parameters        Standards and instructions
 ---------------- ------------------------------------------------------------------------
 dir               Type: str    Default: -
               
-                     The directory of the generated file.
+                  The directory of the generated file.
 ---------------- ------------------------------------------------------------------------ 
 evalue            Type: float    Default: 1e-5
 
-                     Evalue in the blast result.
+                  Evalue in the blast result.
 ---------------- ------------------------------------------------------------------------         
 score             Type: int    Default: 100
 				  
@@ -39,8 +39,7 @@ score             Type: int    Default: 100
 ---------------- ------------------------------------------------------------------------  
 mg                Type: int,int    Default: 50,50
 
-					The maximum clearance length (mg) is an important parameter for
-				  detecting collinear regions.
+				The maximum clearance length (mg) is an important parameter for detecting collinear regions.
 ---------------- ------------------------------------------------------------------------ 
 repeat_number            Type: int    Default: 20
 				  

@@ -11,7 +11,7 @@ We support the use of **WGDI** to complete the work on the icon number.
 Common file
 """""""""""
 
-* *.conf
+* conf
 
 The .conf file contains the parameters required for the corresponding operation, which are read when wGDI is performed.
 Using ``wgdi -* ? > *.conf`` to generate needs to be in the same directory as the file mentioned in the parameter.
@@ -62,7 +62,7 @@ Contents
 .. toctree::
 
    d
-   cl
+   icl
    ks
    a
    bk
@@ -83,6 +83,3 @@ Convenient
 * When a folder runs **WGDI**, **WGDI** automatically generates results for you in the background, and you can exit the folder and go to the next folder to start working.
 
 * **WGDI** performs the **.conf** file for the current folder, so you can copy the **.conf** file in bulk and make parameter modifications that apply to the target folder.
-
-.. image :: _static/4.png
-   :scale: 30%
