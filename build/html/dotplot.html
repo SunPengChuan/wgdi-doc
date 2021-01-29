@@ -94,7 +94,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="use.html">usage</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Dotplot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="collinearity.html">Improved collinearity</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ks.html">ks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ks.html">Non-synonymous (Ka) and synonymous (Ks)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="blockinfo.html">BlockInfo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="correspondence.html">Correspondence</a></li>
 <li class="toctree-l2"><a class="reference internal" href="blockks.html">BlockKs</a></li>
@@ -181,59 +181,64 @@
 <p class="rubric">Parameters</p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 83%" />
+<col style="width: 18%" />
+<col style="width: 82%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Parameters</p></td>
 <td><p>Standards and instructions</p></td>
 </tr>
-<tr class="row-even"><td><p>multiple</p></td>
+<tr class="row-even"><td><p>blast_reverse</p></td>
+<td><p>Type: <strong>bool</strong>   |    Default: <strong>false</strong></p>
+<p>The first two columns of the blast result swap positions.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>multiple</p></td>
 <td><p>Type: <strong>int</strong>   |    Default: <strong>1</strong></p>
 <p>The best number of homologous genes shown with red dots.</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p>score</p></td>
+<tr class="row-even"><td><p>score</p></td>
 <td><p>Type: <strong>int</strong>    |     Default: <strong>100</strong></p>
 <p>Score value in the blast results.</p>
 </td>
 </tr>
-<tr class="row-even"><td><p>evalue</p></td>
+<tr class="row-odd"><td><p>evalue</p></td>
 <td><p>Type: <strong>float</strong>  |  Default: <strong>1e-5</strong></p>
-<p>Evalue value in the blast result.</p>
+<p>Evalue value in blast result.</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p>repeat_number</p></td>
+<tr class="row-even"><td><p>repeat_number</p></td>
 <td><p>Type: <strong>int</strong>  |  Default: <strong>10</strong></p>
-<p>The maximum number of homologous genes is allowed to be copied,the rest removed.</p>
+<p>Restriction of gene number relative to another genome.</p>
 </td>
 </tr>
-<tr class="row-even"><td><p>position</p></td>
+<tr class="row-odd"><td><p>position</p></td>
 <td><p>Type: {<strong>order</strong>, <strong>start</strong> , <strong>end</strong> }  |  Default: <strong>order</strong></p>
 <p>The position of the gene corresponds to the gff file.</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p>ancestor_left</p></td>
+<tr class="row-even"><td><p>ancestor_left</p></td>
 <td><p>Type: <strong>file</strong>  |  Default: <strong>none</strong></p>
 <p>The ancestral chromosome region of the species on the left of dotplot.</p>
 </td>
 </tr>
-<tr class="row-even"><td><p>ancestor_top</p></td>
+<tr class="row-odd"><td><p>ancestor_top</p></td>
 <td><p>Type: <strong>file</strong>  |  Default: <strong>none</strong></p>
 <p>The ancestral chromosome region of the species on the top of dotplot.</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p>markersize</p></td>
+<tr class="row-even"><td><p>markersize</p></td>
 <td><p>Type: <strong>float</strong>   | Default: <strong>0.5</strong></p>
 <p>The size of the point in the plot.</p>
 </td>
 </tr>
-<tr class="row-even"><td><p>figsize</p></td>
+<tr class="row-odd"><td><p>figsize</p></td>
 <td><p>Type: <strong>int,int</strong> |  Default: <strong>10,10</strong></p>
 <p>Control the proportion of the size of the saved picture.</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p>savefile</p></td>
+<tr class="row-even"><td><p>savefile</p></td>
 <td><p>Type: {*. <strong>png</strong>,*. <strong>pdf</strong>}  |  Default: *. <strong>png</strong></p>
 <p>Save pictures support png, pdf, svg formats.</p>
 </td>

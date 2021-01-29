@@ -1,40 +1,46 @@
 Improved collinearity
 ---------------------
 
-colinearscan is a simple way to run ColinearScan.
+The algorithm for extracting collinearity is based on the dynamic programming algorithm, similar to the ColinearScan and MCScan. 
    
 .. rubric:: Parameters
 
 .. tabularcolumns:: column spec
 
 ================ ========================================================================
-Parameters        Standards and instructions
+Parameters       Standards and instructions
 ---------------- ------------------------------------------------------------------------
-dir               Type: str    Default: -
-              
-                  The directory of the generated file.
----------------- ------------------------------------------------------------------------ 
-evalue            Type: float    Default: 1e-5
+multiple         Type: **int**   |    Default: **1**
 
-                  Evalue in the blast result.
+                 The best number of homologous genes shown with red dots.
+---------------- ------------------------------------------------------------------------ 
+evalue           Type: **float**  |  Default: **1e-5**
+
+                 Evalue in the blast result.
 ---------------- ------------------------------------------------------------------------         
-score             Type: int    Default: 100
-				  
-                     Score value in the blast results.
+score            Type: **int**  |  Default: **100**
+  
+                 Score value in the blast results.
 ---------------- ------------------------------------------------------------------------  
-mg                Type: int,int    Default: 50,50
+grading          Type: **int** , **int** ,**int**  |  Default: **50**, **40** , **25**
 
-				The maximum clearance length (mg) is an important parameter for detecting collinear regions.
+                 assigns different scores based on the colors in the dotplot, with a default of 50 for red, 40 for blue, and 25 for gray.
+---------------- ------------------------------------------------------------------------  
+mg               Type: **int** , **int**   |  Default: **40**, **40** 
+
+                 The maximum clearance length (mg) is an important parameter for detecting collinear regions.
 ---------------- ------------------------------------------------------------------------ 
-repeat_number            Type: int    Default: 20
-				  
-                     The maximum number of homologous genes is allowed 
-				  
-				  to be removed more than part of the population.
----------------- ------------------------------------------------------------------------ 				  
-position          Type: {start,order,end}    Default: order
+repeat_number    Type: **int** |   Default: **10**
+  
+                 The maximum number of homologous genes is allowed to be removed more than part of the population.
+---------------- ------------------------------------------------------------------------   
+process          Type: **int**  |  Default: **8**
 
-                     The position of the gene corresponds to the gff file.
+                 Number of multiple processes.
+---------------- ------------------------------------------------------------------------   
+position         Type: **order**  |  Default: **order**
+
+                 The position of the gene corresponds to the gff file.
 ================ ========================================================================
 
 Use command to enter the folder ``wgdi -icl ? >> total.conf`` Take out the parameter file.

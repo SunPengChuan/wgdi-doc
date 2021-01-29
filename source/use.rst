@@ -34,6 +34,8 @@ The .conf file contains the parameters required for the corresponding operation,
 Using ``wgdi -* ? > *.conf`` to generate needs to be in the same directory as the file mentioned in the parameter.
 And total.conf contains all the parameters, using ``wgdi -conf ? > total.conf`` is generated.
 
+If you don't know which files are needed, you can view it through ''wgdi -parm? '' ,''wgdi -parm help'', or''wgdi -parm example'' .These three commands are equivalent.
+
 In the **conf file**: **gff1**, **lens1**, **gff2**, and **lens2** represent the files of species 1 and 2, respectively.
 
 We will not explain in detail when we explain the parameters.

@@ -1,11 +1,38 @@
-ks
---
+Non-synonymous (Ka) and synonymous (Ks)
+---------------------------------------
 
-ks is calculate Ka/Ks for homologous gene pairs by Comdel.
+Non-synonymous (Ka) and synonymous (Ks) substitution rates are estimated using the Nei-Gojobori method implemented in the YN00 program in the PAML (4.9h)
 
 .. rubric:: Parameters
 
-Use command to enter the folder ``wgdi -ks ? > ks.conf`` Take out the parameter file.::
+================ ========================================================================
+Parameters        Standards and instructions
+---------------- ------------------------------------------------------------------------
+cds_file         Type: **file**  |   Default: **-**
+                  
+                 A cds file of one or more genomes.  
+---------------- ------------------------------------------------------------------------
+pep_file         Type: **file**   |  Default:  **-**
+                  
+                 A protein file for one or more genomes. non-essential files, if you do not write this parameter, Then this file will be translated through the biopython module cds-file.
+---------------- ------------------------------------------------------------------------
+align_software   Type:{ **muscle**, **mafft** }  |   Default: **muscle**
+
+                 Multi-sequence comparison software.
+---------------- ------------------------------------------------------------------------
+pairs_file       Type: **file**   |  Default: **-**
+
+                 The same gene pairs of ks need to be calculated, either by pressing, or separating the list, or as the output of ColinearScan.
+---------------- ------------------------------------------------------------------------
+ks_file          Type: **file**  |  Default: **-**
+
+                 The output file name of ks.
+================ ========================================================================
+
+Use command to enter the folder ``wgdi -ks ? >> total.conf`` Take out the parameter file.
+
+
+.. code-block:: python
 
    [ks]
    cds_file = cds file
@@ -14,47 +41,14 @@ Use command to enter the folder ``wgdi -ks ? > ks.conf`` Take out the parameter 
    pairs_file = gene  pairs file
    ks_file = ks result
 
-.. tabularcolumns:: column spec
 
-================ ========================================================================
-Parameters        Standards and instructions
----------------- ------------------------------------------------------------------------
-cds_file          Type: str     Default: -
-                  
-                     A cds file of one or more genomes.				  
----------------- ------------------------------------------------------------------------
-pep_file          Type:str     Default:- 
-                  
-					A protein file for one or more genomes. non-essential files, if you 
-					 
-				  do not write this parameter, Then this file will be translated through 
-				  
-				  the biopython module cds-file.
----------------- ------------------------------------------------------------------------
-align_software    Type:{muscle,mafft}     Default: muscle
+.. rubric:: Quick start
 
-                     Multi-sequence comparison software.
----------------- ------------------------------------------------------------------------
-pairs_file        Type:str     Default: -
-
-					The same gene pairs of ks need to be calculated, either by pressing, 
-				  
-				   or separating the list, or as the output of ColinearScan.			
----------------- ------------------------------------------------------------------------
-ks_file           Type:str     Default: -
-
-                     The output file name of ks.
-================ ========================================================================	  
+After the parameters are modified properly, then run ``wgdi -ks total.conf`` 
 
 .. rubric:: Example
 
-.. rubric:: Modify
+The original results are easily accessible at `wgdi-example <https://github.com/SunPengChuan/wgdi-example>`_
 
-Modify the parameters that are right for you to run.
-
-.. rubric:: Begin
-
-Use ``wgdi -ks ks.conf`` to run the parameter file and output the results you want.
-
-.. image :: _static/1.png
+.. image :: _static/calks.png
    :align: left

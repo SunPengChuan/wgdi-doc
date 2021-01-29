@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>ks &mdash; WGDI latest documentation</title>
+  <title>Non-synonymous (Ka) and synonymous (Ks) &mdash; WGDI latest documentation</title>
   
 
   
@@ -94,7 +94,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="use.html">usage</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="dotplot.html">Dotplot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="collinearity.html">Improved collinearity</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">ks</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Non-synonymous (Ka) and synonymous (Ks)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="blockinfo.html">BlockInfo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="correspondence.html">Correspondence</a></li>
 <li class="toctree-l2"><a class="reference internal" href="blockks.html">BlockKs</a></li>
@@ -156,7 +156,7 @@
         
           <li><a href="use.html">usage</a> &raquo;</li>
         
-      <li>ks</li>
+      <li>Non-synonymous (Ka) and synonymous (Ks)</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -175,12 +175,48 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="ks">
-<h1>ks<a class="headerlink" href="#ks" title="Permalink to this headline">¶</a></h1>
-<p>ks is calculate Ka/Ks for homologous gene pairs by Comdel.</p>
+  <div class="section" id="non-synonymous-ka-and-synonymous-ks">
+<h1>Non-synonymous (Ka) and synonymous (Ks)<a class="headerlink" href="#non-synonymous-ka-and-synonymous-ks" title="Permalink to this headline">¶</a></h1>
+<p>Non-synonymous (Ka) and synonymous (Ks) substitution rates are estimated using the Nei-Gojobori method implemented in the YN00 program in the PAML (4.9h)</p>
 <p class="rubric">Parameters</p>
-<p>Use command to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-ks</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">ks.conf</span></code> Take out the parameter file.:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">ks</span><span class="p">]</span>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 91%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Parameters</p></td>
+<td><p>Standards and instructions</p></td>
+</tr>
+<tr class="row-even"><td><p>cds_file</p></td>
+<td><p>Type: <strong>file</strong>  |   Default: <strong>-</strong></p>
+<p>A cds file of one or more genomes.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>pep_file</p></td>
+<td><p>Type: <strong>file</strong>   |  Default:  <strong>-</strong></p>
+<p>A protein file for one or more genomes. non-essential files, if you do not write this parameter, Then this file will be translated through the biopython module cds-file.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>align_software</p></td>
+<td><p>Type:{ <strong>muscle</strong>, <strong>mafft</strong> }  |   Default: <strong>muscle</strong></p>
+<p>Multi-sequence comparison software.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>pairs_file</p></td>
+<td><p>Type: <strong>file</strong>   |  Default: <strong>-</strong></p>
+<p>The same gene pairs of ks need to be calculated, either by pressing, or separating the list, or as the output of ColinearScan.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>ks_file</p></td>
+<td><p>Type: <strong>file</strong>  |  Default: <strong>-</strong></p>
+<p>The output file name of ks.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Use command to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-ks</span> <span class="pre">?</span> <span class="pre">&gt;&gt;</span> <span class="pre">total.conf</span></code> Take out the parameter file.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">ks</span><span class="p">]</span>
 <span class="n">cds_file</span> <span class="o">=</span> <span class="n">cds</span> <span class="n">file</span>
 <span class="n">pep_file</span> <span class="o">=</span> <span class="n">pep</span> <span class="n">file</span>
 <span class="n">align</span> <span class="n">software</span> <span class="o">=</span> <span class="n">muscle</span>
@@ -188,65 +224,11 @@
 <span class="n">ks_file</span> <span class="o">=</span> <span class="n">ks</span> <span class="n">result</span>
 </pre></div>
 </div>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 15%" />
-<col style="width: 85%" />
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p>Parameters</p></td>
-<td><p>Standards and instructions</p></td>
-</tr>
-<tr class="row-even"><td><p>cds_file</p></td>
-<td><p>Type: str     Default: -</p>
-<blockquote>
-<div><p>A cds file of one or more genomes.</p>
-</div></blockquote>
-</td>
-</tr>
-<tr class="row-odd"><td><p>pep_file</p></td>
-<td><p>Type:str     Default:-</p>
-<blockquote>
-<div><blockquote>
-<div><p>A protein file for one or more genomes. non-essential files, if you</p>
-</div></blockquote>
-<p>do not write this parameter, Then this file will be translated through</p>
-<p>the biopython module cds-file.</p>
-</div></blockquote>
-</td>
-</tr>
-<tr class="row-even"><td><p>align_software</p></td>
-<td><p>Type:{muscle,mafft}     Default: muscle</p>
-<blockquote>
-<div><p>Multi-sequence comparison software.</p>
-</div></blockquote>
-</td>
-</tr>
-<tr class="row-odd"><td><p>pairs_file</p></td>
-<td><p>Type:str     Default: -</p>
-<blockquote>
-<div><blockquote>
-<div><p>The same gene pairs of ks need to be calculated, either by pressing,</p>
-</div></blockquote>
-<p>or separating the list, or as the output of ColinearScan.</p>
-</div></blockquote>
-</td>
-</tr>
-<tr class="row-even"><td><p>ks_file</p></td>
-<td><p>Type:str     Default: -</p>
-<blockquote>
-<div><p>The output file name of ks.</p>
-</div></blockquote>
-</td>
-</tr>
-</tbody>
-</table>
+<p class="rubric">Quick start</p>
+<p>After the parameters are modified properly, then run <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-ks</span> <span class="pre">total.conf</span></code></p>
 <p class="rubric">Example</p>
-<p class="rubric">Modify</p>
-<p>Modify the parameters that are right for you to run.</p>
-<p class="rubric">Begin</p>
-<p>Use <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-ks</span> <span class="pre">ks.conf</span></code> to run the parameter file and output the results you want.</p>
-<img alt="_images/1.png" class="align-left" src="_images/1.png" />
+<p>The original results are easily accessible at <a class="reference external" href="https://github.com/SunPengChuan/wgdi-example">wgdi-example</a></p>
+<img alt="_images/calks.png" class="align-left" src="_images/calks.png" />
 </div>
 
 

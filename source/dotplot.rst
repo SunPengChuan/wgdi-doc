@@ -11,6 +11,10 @@ Dotplot is show homologous gene dotplot.
 ================ ========================================================================
 Parameters       Standards and instructions
 ---------------- ------------------------------------------------------------------------
+blast_reverse    Type: **bool**   |    Default: **false**
+
+                 The first two columns of the blast result swap positions.
+---------------- ------------------------------------------------------------------------
 multiple         Type: **int**   |    Default: **1**
 
                  The best number of homologous genes shown with red dots.
@@ -21,11 +25,11 @@ score            Type: **int**    |     Default: **100**
 ---------------- ------------------------------------------------------------------------
 evalue           Type: **float**  |  Default: **1e-5**
 
-                 Evalue value in the blast result.
+                 Evalue value in blast result.
 ---------------- ------------------------------------------------------------------------   
 repeat_number    Type: **int**  |  Default: **10**
 
-                 The maximum number of homologous genes is allowed to be copied,the rest removed.					  
+                 Restriction of gene number relative to another genome.
 ---------------- ------------------------------------------------------------------------  
 position         Type: {**order**, **start** , **end** }  |  Default: **order**
 

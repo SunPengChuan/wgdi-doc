@@ -10,9 +10,9 @@ Description
 -----------
 
 
-
-This is a gold standard for complex genomic analysis, including the construction of genomic homology maps, event-related collinear gene mapping, repeated gene classification,  molecular evolution distance estimation, and the determination and correction of evolution rate differences, etc.
-Finely identify the whole genome duplication events and generate the genomic homology tables.
+This is a gold standard for complex genomic analysis,including the construction
+of homologous gene dotplot, event-related genomic alignment, and synonymous
+substitutions, and differences in different evolution rates, etc.
 
 Table of Contents
 -----------------

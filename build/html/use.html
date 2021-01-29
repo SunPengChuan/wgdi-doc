@@ -94,7 +94,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">usage</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="dotplot.html">Dotplot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="collinearity.html">Improved collinearity</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ks.html">ks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ks.html">Non-synonymous (Ka) and synonymous (Ks)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="blockinfo.html">BlockInfo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="correspondence.html">Correspondence</a></li>
 <li class="toctree-l2"><a class="reference internal" href="blockks.html">BlockKs</a></li>
@@ -182,7 +182,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="dotplot.html">Dotplot</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collinearity.html">Improved collinearity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ks.html">ks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ks.html">Non-synonymous (Ka) and synonymous (Ks)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="blockinfo.html">BlockInfo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="correspondence.html">Correspondence</a></li>
 <li class="toctree-l1"><a class="reference internal" href="blockks.html">BlockKs</a></li>
@@ -198,9 +198,10 @@
 <ul class="simple">
 <li><p>conf</p></li>
 </ul>
-<p>The .conf file contains the parameters required for the corresponding operation, which are read when wGDI is performed.
+<p>The .conf file contains the parameters required for the corresponding operation, which are read when WGDI is performed.
 Using <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-*</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">*.conf</span></code> to generate needs to be in the same directory as the file mentioned in the parameter.
 And total.conf contains all the parameters, using <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-conf</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">total.conf</span></code> is generated.</p>
+<p>If you don’t know which files are needed, you can view it through ‘’wgdi -parm? ‘’ ,’’wgdi -parm help’’, or’’wgdi -parm example’’ .These three commands are equivalent.</p>
 <p>In the <strong>conf file</strong>: <strong>gff1</strong>, <strong>lens1</strong>, <strong>gff2</strong>, and <strong>lens2</strong> represent the files of species 1 and 2, respectively.</p>
 <p>We will not explain in detail when we explain the parameters.</p>
 <p><strong>genome1_name</strong> and <strong>genome1_name</strong> represent the names of species 1 and 2, respectively.

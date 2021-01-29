@@ -1,44 +1,73 @@
 PeaksFit
--------
+--------
 
 peaksfit is gaussian fitting of ks distribution.
 
   
 .. rubric:: Parameters
 
-Use command to enter the folder ``wgdi -pf ? > blockks.conf`` Take out the parameter file.
-
 .. tabularcolumns:: column spec
 
 ================ ========================================================================
 Parameters        Standards and instructions
 ---------------- ------------------------------------------------------------------------
------------       Type: str    Default: -
+blockinfo        Type: **file**  |    Default: **-**
+                     
+                 Output result of parameter `bi`
 ---------------- ------------------------------------------------------------------------
------------       Type: str    Default: -
+mode             Type: {**median**, **average**, **total**}   | Default: **median**
+
+                 Different processing methods of ks value on collinearity block.
 ---------------- ------------------------------------------------------------------------
------------       Type: str    Default: -			 
+tandem_length    Type: **int**   | Default: **200**
+
+                 If tandem=true, the maximum range of tandem influence.
 ---------------- ------------------------------------------------------------------------
------------       Type: str    Default: -
+bins_number      Type: **int**   |   Default: **200**
+                     
+                 Show the minimum length of a collinear block.
 ---------------- ------------------------------------------------------------------------
------------       Type: str    Default: -
+fontsize         Type: **float**   | Default: **9**
+
+                 The fontsize of label in the plot.
 ---------------- ------------------------------------------------------------------------
------------       Type: str    Default: -
+area             Type: **str**   Default: **-1,3**
+                     
+                 Show the range of ks.
 ---------------- ------------------------------------------------------------------------
------------       Type: str    Default: -
+figsize          Type: **int,int** |  Default: **10,10**
+
+                 Control the proportion of the size of the saved picture.
 ---------------- ------------------------------------------------------------------------
------------       Type: str    Default: -
+savefile         Type: {\*. **png**,\*. **pdf**, \*. **svg**}  |  Default: \*. **png**
+
+                 Save pictures support png, pdf, svg formats.
 ================ ========================================================================
+
+Use command to enter the folder ``wgdi -pf ? > blockks.conf`` Take out the parameter file.
+
+.. code-block:: python
+
+   [peaksfit]
+   blockinfo = block information
+   mode = median
+   bins_number = 200
+   ks_area = 0,10
+   fontsize = 9
+   area = 0,3
+   figsize = 10,6.18
+   savefig = saving image
+
+
+
+.. rubric:: Quick start
+
+After the parameters are modified properly, then run ``wgdi -pf total.conf`` 
+
 
 .. rubric:: Example
 
-.. rubric:: Modify
+The original results are easily accessible at `wgdi-example <https://github.com/SunPengChuan/wgdi-example>`_
 
-Modify the parameters that are right for you to run.
-
-.. rubric:: Begin
-
-Use ``wgdi –pf blockks.conf`` to run the parameter file and output the results you want.
-
-.. image :: _static/1.png
+.. image :: _static/vvi161s_vvi161s.kspeaks.fit.png
    :align: left

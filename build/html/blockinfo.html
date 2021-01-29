@@ -39,7 +39,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Correspondence" href="correspondence.html" />
-    <link rel="prev" title="ks" href="ks.html" /> 
+    <link rel="prev" title="Non-synonymous (Ka) and synonymous (Ks)" href="ks.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -94,7 +94,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="use.html">usage</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="dotplot.html">Dotplot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="collinearity.html">Improved collinearity</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ks.html">ks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ks.html">Non-synonymous (Ka) and synonymous (Ks)</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">BlockInfo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="correspondence.html">Correspondence</a></li>
 <li class="toctree-l2"><a class="reference internal" href="blockks.html">BlockKs</a></li>
@@ -177,97 +177,156 @@
             
   <div class="section" id="blockinfo">
 <h1>BlockInfo<a class="headerlink" href="#blockinfo" title="Permalink to this headline">¶</a></h1>
-<p>bi is collinearity and Ks speculate whole genome duplication.</p>
+<p>The color distinction in the dot plot, the collinearity result and the Ks result are integrated into one file. This file contains the main information of the collinearity fragments to achieve the purpose of easily screening the collinearity fragments.</p>
 <p class="rubric">Parameters</p>
-<p>Use command to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-bk</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">blockks.conf</span></code> Take out the parameter file.:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">b1ockinfo</span><span class="p">]</span>
-<span class="n">blast</span> <span class="o">=</span> <span class="n">blast</span> <span class="n">file</span>
-<span class="n">gff1</span> <span class="o">=</span> <span class="n">gffl</span> <span class="n">file</span>
-<span class="n">gff2</span> <span class="o">=</span> <span class="n">gff2</span> <span class="n">file</span>
-<span class="n">lens1</span> <span class="o">=</span> <span class="n">lens1</span> <span class="n">file</span>
-<span class="mi">1</span><span class="n">ens2</span> <span class="o">=</span> <span class="n">lens2</span> <span class="n">file</span>
-<span class="n">colinearity</span> <span class="o">=</span> <span class="n">colinearity</span> <span class="n">file</span>
-<span class="n">score</span> <span class="o">=</span> <span class="mi">100</span>
-<span class="n">evalue</span> <span class="o">=</span> <span class="mf">1e-5</span>
-<span class="n">repeat_number</span> <span class="o">=</span> <span class="mi">30</span>
-<span class="n">position</span> <span class="o">=</span> <span class="n">order</span>
-<span class="n">ks</span> <span class="o">=</span> <span class="n">ks</span> <span class="n">file</span>
-<span class="n">ks_col</span> <span class="o">=</span> <span class="n">ka_</span> <span class="n">NG86</span>
-<span class="n">savefile</span> <span class="o">=</span> <span class="n">block</span> <span class="n">information</span> <span class="p">(</span><span class="o">*.</span><span class="n">csv</span><span class="p">)</span>
-</pre></div>
-</div>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 83%" />
+<col style="width: 14%" />
+<col style="width: 86%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Parameters</p></td>
 <td><p>Standards and instructions</p></td>
 </tr>
-<tr class="row-even"><td><p>colinearity</p></td>
-<td><p>Type: str    Default: -</p>
-<blockquote>
-<div><p>Colinscan results file.</p>
-</div></blockquote>
+<tr class="row-even"><td><p>collinearity</p></td>
+<td><p>Type: <strong>file</strong> |    Default: <strong>-</strong></p>
+<p>Colinearscan or MCScanX result file or gene pairs divided by tab.</p>
 </td>
 </tr>
 <tr class="row-odd"><td><p>score</p></td>
-<td><p>Type: int    Default: 100</p>
-<blockquote>
-<div><p>Score value in the blast results.</p>
-</div></blockquote>
+<td><p>Type: <strong>int</strong>  |   Default: <strong>100</strong></p>
+<p>Score value in the blast results.</p>
 </td>
 </tr>
 <tr class="row-even"><td><p>evalue</p></td>
-<td><p>Type: float    Default: 1e-5</p>
-<blockquote>
-<div><p>Evalue value in blast result.</p>
-</div></blockquote>
+<td><p>Type: <strong>float</strong>   |  Default: <strong>1e-5</strong></p>
+<p>Evalue value in blast result.</p>
 </td>
 </tr>
 <tr class="row-odd"><td><p>repeat_number</p></td>
-<td><p>Type: int    Default: 20</p>
-<blockquote>
-<div><blockquote>
-<div><p>The maximum number of homologous genes is allowed</p>
-</div></blockquote>
-<p>to be removed more than part of the population.</p>
-</div></blockquote>
+<td><p>Type: <strong>int</strong>  |   Default: <strong>10</strong></p>
+<p>The maximum number of homologous genes is allowed to be removed more than part of the population.</p>
 </td>
 </tr>
 <tr class="row-even"><td><p>position</p></td>
-<td><p>Type: {start,order,end}    Default: order</p>
-<blockquote>
-<div><p>The position of the gene corresponds to the gff file.</p>
-</div></blockquote>
+<td><p>Type: {<strong>order</strong>}  |   Default: <strong>order</strong></p>
+<p>The position of the gene corresponds to the gff file.</p>
 </td>
 </tr>
 <tr class="row-odd"><td><p>ks</p></td>
-<td><p>Type: str    Default: -</p>
-<blockquote>
-<div><p>ks calculation results.</p>
-</div></blockquote>
+<td><p>Type: <strong>file</strong>  |    Default: <strong>-</strong></p>
+<p>ks calculation results.</p>
 </td>
 </tr>
 <tr class="row-even"><td><p>ks_col</p></td>
-<td><p>Type: str    Default: -</p></td>
+<td><p>Type: <strong>str</strong>    Default: <strong>NG86</strong></p>
+<p>The result calculated by ks_YN00 or other methods is a single column</p>
+</td>
 </tr>
 <tr class="row-odd"><td><p>savefile</p></td>
-<td><p>Type: *.csv    Default: *.csv</p>
-<blockquote>
-<div><p>The resulting file.</p>
-</div></blockquote>
+<td><p>Type: <strong>file</strong>   |  Default: * <strong>.csv</strong></p>
+<p>The resulting file.</p>
 </td>
 </tr>
 </tbody>
 </table>
+<p>Use command to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-bi</span> <span class="pre">?</span> <span class="pre">&gt;&gt;</span> <span class="pre">total.conf</span></code> Take out the parameter file.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">blockinfo</span><span class="p">]</span>
+<span class="n">blast</span> <span class="o">=</span> <span class="n">blast</span> <span class="n">file</span>
+<span class="n">gff1</span> <span class="o">=</span>  <span class="n">gff1</span> <span class="n">file</span>
+<span class="n">gff2</span> <span class="o">=</span>  <span class="n">gff2</span> <span class="n">file</span>
+<span class="n">lens1</span> <span class="o">=</span> <span class="n">lens1</span> <span class="n">file</span>
+<span class="n">lens2</span> <span class="o">=</span> <span class="n">lens2</span> <span class="n">file</span>
+<span class="n">collinearity</span> <span class="o">=</span> <span class="n">collinearity</span> <span class="n">file</span>
+<span class="n">score</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">evalue</span> <span class="o">=</span> <span class="mf">1e-5</span>
+<span class="n">repeat_number</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">position</span> <span class="o">=</span> <span class="n">order</span>
+<span class="n">ks</span> <span class="o">=</span> <span class="n">ks</span> <span class="n">file</span>
+<span class="n">ks_col</span> <span class="o">=</span> <span class="n">ks_NG86</span>
+<span class="n">savefile</span> <span class="o">=</span> <span class="n">block</span> <span class="n">information</span> <span class="p">(</span><span class="o">*.</span><span class="n">csv</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="rubric">Quick start</p>
+<p>After the parameters are modified properly, then run <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-bi</span> <span class="pre">total.conf</span></code></p>
 <p class="rubric">Example</p>
-<p class="rubric">Modify</p>
-<p>Modify the parameters that are right for you to run.</p>
-<p class="rubric">Begin</p>
-<p>Use <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">–bi</span> <span class="pre">blockinfo.conf</span></code> to run the parameter file and output the results you want.</p>
-<img alt="_images/1.png" class="align-left" src="_images/1.png" />
+<p>The original results are easily accessible at <a class="reference external" href="https://github.com/SunPengChuan/wgdi-example">wgdi-example</a></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 87%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Parameters</p></td>
+<td><p>Standards and instructions</p></td>
+</tr>
+<tr class="row-even"><td><p>id</p></td>
+<td><p>Type: <strong>str</strong></p>
+<p>Unique id.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>chr1,chr2</p></td>
+<td><p>Type: <strong>int</strong></p>
+<p>Two chromosomes corresponding to collinearity block.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>start1,end1</p></td>
+<td><p>Type: <strong>int</strong></p>
+<p>The region of chromosome 1 on collinearity block.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>start2,end2</p></td>
+<td><p>Type: <strong>int</strong></p>
+<p>The region of chromosome 2 on collinearity block.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>pvalue</p></td>
+<td><p>Type: <strong>float</strong></p>
+<p>Evaluate the compactness and uniqueness of collinear blocks, the range is 0-1, the better collinearity range is 0-0.2.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>lentgth</p></td>
+<td><p>Type: <strong>int</strong></p>
+<p>lentgth of collinearity block.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>ks_median</p></td>
+<td><p>Type: <strong>float</strong></p>
+<p>The median of ks value on collinearity block.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>ks_average</p></td>
+<td><p>Type: <strong>float</strong></p>
+<p>The average of ks value on collinearity block.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>homo1-5</p></td>
+<td><p>Type: <strong>float</strong></p>
+<p>Evalue value in blast result.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>block1,block2</p></td>
+<td><p>Type: <strong>str</strong></p>
+<p>Gene pairs in collinear blocks</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>ks</p></td>
+<td><p>Type: <strong>str</strong></p>
+<p>The position of the gene corresponds to the gff file.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>density1,density2</p></td>
+<td><p>Type: <strong>float</strong></p>
+<p>Density of collinear blocks.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>class1,class2</p></td>
+<td><p>Type: <strong>str</strong></p>
+<p>Class of collinear blocks.</p>
+</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 
@@ -277,7 +336,7 @@
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         <a href="correspondence.html" class="btn btn-neutral float-right" title="Correspondence" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="ks.html" class="btn btn-neutral float-left" title="ks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ks.html" class="btn btn-neutral float-left" title="Non-synonymous (Ka) and synonymous (Ks)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
