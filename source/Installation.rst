@@ -25,7 +25,7 @@ Python package and command line interface (IDLE) for the analysis of whole genom
 
 **Dependencies**
 
-Some parts of WGDI use the following third-party software: 
+Some parts of WGDI use the following third-party softwares: 
 
 `PAML <http://abacus.gene.ucl.ac.uk/software/paml.html>`_  |  `MAFFT <https://mafft.cbrc.jp/alignment/software/>`_  | `MUSCLE <http://www.drive5.com/muscle/downloads.htm>`_  | `PAL2NAL <http://www.bork.embl.de/pal2nal/#Download>`_ `IQTREE <http://www.iqtree.org/#download>`_ 
 

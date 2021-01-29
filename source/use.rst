@@ -5,12 +5,32 @@ Point open the **Centents** on the left.
   
 We support the use of **WGDI** to complete the work on the icon number.
 
-Common file
-"""""""""""
+**Contents**
+
+.. toctree::
+
+   dotplot
+   collinearity
+   ks
+   blockinfo
+   correspondence
+   blockks
+   kspeaks
+   peaksfit
+   a
+   ci
+   retain
+   c
+   
+  
+
+
+**Common file**
+
 
 * conf
 
-The .conf file contains the parameters required for the corresponding operation, which are read when wGDI is performed.
+The .conf file contains the parameters required for the corresponding operation, which are read when WGDI is performed.
 Using ``wgdi -* ? > *.conf`` to generate needs to be in the same directory as the file mentioned in the parameter.
 And total.conf contains all the parameters, using ``wgdi -conf ? > total.conf`` is generated.
 
@@ -23,55 +43,39 @@ These parameters will be used to label the picture for your convenience.
 
 * gff
 
-.. image :: _static/vv1s.gff.png
-
 .. tabularcolumns:: column spec
 
-====== ============ ==============================
+====== ============ ======================================================
 Column Information  Explanation
 1      Chr          Chromosome number 
-2      ID           Gene name
+2      Id           Gene name
 3      Strat        The location of the gene 
 4      End          Gene ending position
 5      Direction    Direction of the gene sequence
-6      Order name   Full name
-====== ============ ==============================
+6      Order        Order is the order of each chromosome starting from 1
+7      Original     Original id and  not read
+====== ============ ======================================================
+
+.. image :: _static/vv1s.gff.png
+
 
 * lens
-
-.. image :: _static/vv1s.lens.png
 
 .. tabularcolumns:: column spec
 
 ========= =========== =========================================
 Column    Information Explanation                   
-1                     Chromosome number
-2         Chr lens    Number of chromosome sequences
-3                     Number of chromosome genes
-\*_random             Not slicing the genes on the chromosomes      
+1         Chr         Chromosome number
+2         Length      Length of chromosome sequences
+3         Order       Number of chromosome genes      
 ========= =========== =========================================
+
+.. image :: _static/vv1s.lens.png
 
 *  The explosion is the output file of the `blast+ <ftp://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST/>`_ ,available in the -6 and m-8 formats..
 
-Contents
-""""""""
 
-.. toctree::
-
-   d
-   icl
-   ks
-   a
-   bk
-   ci
-   kp
-   r
-   c
-   pf
-   bi
-
-Convenient
-""""""""""
+**Convenient**
 
 * You can use ``wgdi -conf ? > total.conf`` generates a **total.conf** file with all parameters, and when you modify the parameters and run **WGDI**, **WGDI** will only read the parameters corresponding to the **total.conf** file to execute your command.
 

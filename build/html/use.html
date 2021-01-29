@@ -38,7 +38,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="dotplot" href="d.html" />
+    <link rel="next" title="Dotplot" href="dotplot.html" />
     <link rel="prev" title="Installation" href="Installation.html" /> 
 </head>
 
@@ -92,22 +92,18 @@
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">usage</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#common-file">Common file</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#contents">Contents</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="d.html">dotplot</a></li>
-<li class="toctree-l3"><a class="reference internal" href="icl.html">colinearscan</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ks.html">ks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="a.html">align</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bk.html">blockks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ci.html">circos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="kp.html">kspeaks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="r.html">retain</a></li>
-<li class="toctree-l3"><a class="reference internal" href="c.html">correspondence</a></li>
-<li class="toctree-l3"><a class="reference internal" href="pf.html">pf</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bi.html">bi</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#convenient">Convenient</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dotplot.html">Dotplot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collinearity.html">Improved collinearity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ks.html">ks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockinfo.html">BlockInfo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="correspondence.html">Correspondence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="blockks.html">BlockKs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kspeaks.html">KsPeaks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="peaksfit.html">PeaksFit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="a.html">align</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ci.html">circos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="retain.html">retain</a></li>
+<li class="toctree-l2"><a class="reference internal" href="c.html">correspondence</a></li>
 </ul>
 </li>
 </ul>
@@ -181,8 +177,24 @@
 <h1>usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
 <p>Point open the <strong>Centents</strong> on the left.</p>
 <p>We support the use of <strong>WGDI</strong> to complete the work on the icon number.</p>
-<div class="section" id="common-file">
-<h2>Common file<a class="headerlink" href="#common-file" title="Permalink to this headline">¶</a></h2>
+<p><strong>Contents</strong></p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="dotplot.html">Dotplot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collinearity.html">Improved collinearity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ks.html">ks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="blockinfo.html">BlockInfo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="correspondence.html">Correspondence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="blockks.html">BlockKs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kspeaks.html">KsPeaks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="peaksfit.html">PeaksFit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="a.html">align</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ci.html">circos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="retain.html">retain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="c.html">correspondence</a></li>
+</ul>
+</div>
+<p><strong>Common file</strong></p>
 <ul class="simple">
 <li><p>conf</p></li>
 </ul>
@@ -196,12 +208,11 @@ These parameters will be used to label the picture for your convenience.</p>
 <ul class="simple">
 <li><p>gff</p></li>
 </ul>
-<img alt="_images/vv1s.gff.png" src="_images/vv1s.gff.png" />
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 13%" />
-<col style="width: 25%" />
-<col style="width: 63%" />
+<col style="width: 8%" />
+<col style="width: 17%" />
+<col style="width: 75%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Column</p></td>
@@ -213,7 +224,7 @@ These parameters will be used to label the picture for your convenience.</p>
 <td><p>Chromosome number</p></td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
-<td><p>ID</p></td>
+<td><p>Id</p></td>
 <td><p>Gene name</p></td>
 </tr>
 <tr class="row-even"><td><p>3</p></td>
@@ -229,15 +240,19 @@ These parameters will be used to label the picture for your convenience.</p>
 <td><p>Direction of the gene sequence</p></td>
 </tr>
 <tr class="row-odd"><td><p>6</p></td>
-<td><p>Order name</p></td>
-<td><p>Full name</p></td>
+<td><p>Order</p></td>
+<td><p>Order is the order of each chromosome starting from 1</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>Original</p></td>
+<td><p>Original id and  not read</p></td>
 </tr>
 </tbody>
 </table>
+<img alt="_images/vv1s.gff.png" src="_images/vv1s.gff.png" />
 <ul class="simple">
 <li><p>lens</p></li>
 </ul>
-<img alt="_images/vv1s.lens.png" src="_images/vv1s.lens.png" />
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 15%" />
@@ -250,54 +265,30 @@ These parameters will be used to label the picture for your convenience.</p>
 <td><p>Explanation</p></td>
 </tr>
 <tr class="row-even"><td><p>1</p></td>
-<td></td>
+<td><p>Chr</p></td>
 <td><p>Chromosome number</p></td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
-<td><p>Chr lens</p></td>
-<td><p>Number of chromosome sequences</p></td>
+<td><p>Length</p></td>
+<td><p>Length of chromosome sequences</p></td>
 </tr>
 <tr class="row-even"><td><p>3</p></td>
-<td></td>
+<td><p>Order</p></td>
 <td><p>Number of chromosome genes</p></td>
-</tr>
-<tr class="row-odd"><td><p>*_random</p></td>
-<td></td>
-<td><p>Not slicing the genes on the chromosomes</p></td>
 </tr>
 </tbody>
 </table>
+<img alt="_images/vv1s.lens.png" src="_images/vv1s.lens.png" />
 <ul class="simple">
 <li><p>The explosion is the output file of the <a class="reference external" href="ftp://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST/">blast+</a> ,available in the -6 and m-8 formats..</p></li>
 </ul>
-</div>
-<div class="section" id="contents">
-<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="d.html">dotplot</a></li>
-<li class="toctree-l1"><a class="reference internal" href="icl.html">colinearscan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ks.html">ks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="a.html">align</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bk.html">blockks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ci.html">circos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kp.html">kspeaks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="r.html">retain</a></li>
-<li class="toctree-l1"><a class="reference internal" href="c.html">correspondence</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pf.html">pf</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bi.html">bi</a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="convenient">
-<h2>Convenient<a class="headerlink" href="#convenient" title="Permalink to this headline">¶</a></h2>
+<p><strong>Convenient</strong></p>
 <ul class="simple">
 <li><p>You can use <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-conf</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">total.conf</span></code> generates a <strong>total.conf</strong> file with all parameters, and when you modify the parameters and run <strong>WGDI</strong>, <strong>WGDI</strong> will only read the parameters corresponding to the <strong>total.conf</strong> file to execute your command.</p></li>
 <li><p>We put in the example of <strong>git</strong>’s official website, where all parameters are in the <strong>total.conf</strong> file.</p></li>
 <li><p>When a folder runs <strong>WGDI</strong>, <strong>WGDI</strong> automatically generates results for you in the background, and you can exit the folder and go to the next folder to start working.</p></li>
 <li><p><strong>WGDI</strong> performs the <strong>.conf</strong> file for the current folder, so you can copy the <strong>.conf</strong> file in bulk and make parameter modifications that apply to the target folder.</p></li>
 </ul>
-</div>
 </div>
 
 
@@ -306,7 +297,7 @@ These parameters will be used to label the picture for your convenience.</p>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="d.html" class="btn btn-neutral float-right" title="dotplot" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="dotplot.html" class="btn btn-neutral float-right" title="Dotplot" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="Installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
