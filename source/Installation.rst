@@ -23,11 +23,11 @@ Python package and command line interface (IDLE) for the analysis of whole genom
    cd wgdi
    python setup.py install
 
-**Third party software**
+**Dependencies**
 
-Some parts of WGDI use the following software:
+Some parts of WGDI use the following third-party software: 
 
-`PAML <http://abacus.gene.ucl.ac.uk/software/paml.html>`_  |  `MAFFT <https://mafft.cbrc.jp/alignment/software/>`_  | `MUSCLE <http://www.drive5.com/muscle/downloads.htm>`_  | `PAL2NAL <http://www.bork.embl.de/pal2nal/#Download>`_  |  `IQTREE <http://www.iqtree.org/#download>`_ 
+`PAML <http://abacus.gene.ucl.ac.uk/software/paml.html>`_  |  `MAFFT <https://mafft.cbrc.jp/alignment/software/>`_  | `MUSCLE <http://www.drive5.com/muscle/downloads.htm>`_  | `PAL2NAL <http://www.bork.embl.de/pal2nal/#Download>`_ `IQTREE <http://www.iqtree.org/#download>`_ 
 
 After you download and install the above package. You can run ``wgdi -conf help > conf.ini`` to configure the path of the existing software.
 

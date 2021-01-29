@@ -9,7 +9,6 @@ Welcome to WGDI's documentation!
 Description
 -----------
 
-.. image :: _static/workflow.svg
 
 
 This is a gold standard for complex genomic analysis, including the construction of genomic homology maps, event-related collinear gene mapping, repeated gene classification,  molecular evolution distance estimation, and the determination and correction of evolution rate differences, etc.
@@ -21,16 +20,18 @@ Table of Contents
 .. toctree::
    :maxdepth: 2
 
+   Introduction
    Installation
    use
 
-Help us
+Contact
 -------
 
-When you have used **WGDI**, you have good suggestions or ideas to email the |author|_'s mailbox or submit changes on our |github|_.
+If you have any questions or good suggestions , send email via |author|_'s mailbox or submit changes on our |github|_.
 
-.. |author| replace:: PengChuan Sun
-.. _author: sunpengchuan@gmail.com
+
+.. |author| replace:: Pengchuan Sun
+.. _author: sunpengchuan\@gmail.com
 
 .. |github| replace:: github
 .. _github: https://github.com/SunPengChuan/wgdi-doc

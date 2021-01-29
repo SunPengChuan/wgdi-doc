@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>pf &mdash; WGDI latest documentation</title>
+  <title>Introduction &mdash; WGDI latest documentation</title>
   
 
   
@@ -38,8 +38,8 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="bi" href="bi.html" />
-    <link rel="prev" title="correspondence" href="c.html" /> 
+    <link rel="next" title="Installation" href="Installation.html" />
+    <link rel="prev" title="Welcome to WGDI’s documentation!" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -89,27 +89,9 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="use.html">usage</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="use.html#common-file">Common file</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="use.html#contents">Contents</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="d.html">dotplot</a></li>
-<li class="toctree-l3"><a class="reference internal" href="icl.html">colinearscan</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ks.html">ks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="a.html">align</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bk.html">blockks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ci.html">circos</a></li>
-<li class="toctree-l3"><a class="reference internal" href="kp.html">kspeaks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="r.html">retain</a></li>
-<li class="toctree-l3"><a class="reference internal" href="c.html">correspondence</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">pf</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bi.html">bi</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="use.html#convenient">Convenient</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="use.html">usage</a></li>
 </ul>
 
             
@@ -158,15 +140,13 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="use.html">usage</a> &raquo;</li>
-        
-      <li>pf</li>
+      <li>Introduction</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/pf.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Introduction.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -179,52 +159,87 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="pf">
-<h1>pf<a class="headerlink" href="#pf" title="Permalink to this headline">¶</a></h1>
-<p>peaksfit is gaussian fitting of ks distribution.</p>
-<p class="rubric">Parameters</p>
-<p>Use command to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-pf</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">blockks.conf</span></code> Take out the parameter file.</p>
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<img alt="_images/workflow.svg" src="_images/workflow.svg" /><p>WGDI subroutine and function</p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 18%" />
-<col style="width: 82%" />
+<col style="width: 8%" />
+<col style="width: 15%" />
+<col style="width: 77%" />
 </colgroup>
+<thead>
+<tr class="row-odd"><th class="head" colspan="2"><p>Parameters</p></th>
+<th class="head"><p>Functions</p></th>
+</tr>
+</thead>
 <tbody>
-<tr class="row-odd"><td><p>Parameters</p></td>
-<td><p>Standards and instructions</p></td>
+<tr class="row-even"><td><p>-h</p></td>
+<td><p>Help</p></td>
+<td><p>Show this help message and exit</p></td>
 </tr>
-<tr class="row-even"><td></td>
-<td><p>Type: str    Default: -</p></td>
+<tr class="row-odd"><td><p>-v</p></td>
+<td><p>Version</p></td>
+<td><p>Show program’s version number</p></td>
 </tr>
-<tr class="row-odd"><td></td>
-<td><p>Type: str    Default: -</p></td>
+<tr class="row-even"><td><p>-icl</p></td>
+<td><p>Collinearity</p></td>
+<td><p>Improved version of ColinearScan</p></td>
 </tr>
-<tr class="row-even"><td></td>
-<td><p>Type: str    Default: -</p></td>
+<tr class="row-odd"><td><p>-ks</p></td>
+<td><p>CalKs</p></td>
+<td><p>Calculate Ka/Ks for homologous gene pairs by YN00</p></td>
 </tr>
-<tr class="row-odd"><td></td>
-<td><p>Type: str    Default: -</p></td>
+<tr class="row-even"><td><p>-bk</p></td>
+<td><p>BlockKs</p></td>
+<td><p>Show Ks of blocks in a dotplot</p></td>
 </tr>
-<tr class="row-even"><td></td>
-<td><p>Type: str    Default: -</p></td>
+<tr class="row-odd"><td><p>-bi</p></td>
+<td><p>BlockInfo</p></td>
+<td><p>Collinearity and Ks speculate whole genome duplication</p></td>
 </tr>
-<tr class="row-odd"><td></td>
-<td><p>Type: str    Default: -</p></td>
+<tr class="row-even"><td><p>-d</p></td>
+<td><p>DotPlot</p></td>
+<td><p>Show homologous gene dotplot</p></td>
 </tr>
-<tr class="row-even"><td></td>
-<td><p>Type: str    Default: -</p></td>
+<tr class="row-odd"><td><p>-c</p></td>
+<td><p>Correspondence</p></td>
+<td><p>Extract event-related genomic alignment</p></td>
 </tr>
-<tr class="row-odd"><td></td>
-<td><p>Type: str    Default: -</p></td>
+<tr class="row-even"><td><p>-a</p></td>
+<td><p>Alignment</p></td>
+<td><p>Collinear genes construct phylogenetic trees</p></td>
+</tr>
+<tr class="row-odd"><td><p>-at</p></td>
+<td><p>AlignmentTrees</p></td>
+<td><p>Polyploidy-index characterize the degree of divergence Between subgenomes of a polyploidy</p></td>
+</tr>
+<tr class="row-even"><td><p>-p</p></td>
+<td><p>P-index</p></td>
+<td><p>Show subgenomes in gene retention or genome fractionation</p></td>
+</tr>
+<tr class="row-odd"><td><p>-r</p></td>
+<td><p>Retain</p></td>
+<td><p>A simple way to run circos</p></td>
+</tr>
+<tr class="row-even"><td><p>-ci</p></td>
+<td><p>Circos</p></td>
+<td><p>A simple way to get ks peaks</p></td>
+</tr>
+<tr class="row-odd"><td><p>-kp</p></td>
+<td><p>KsPeaks</p></td>
+<td><p>Gaussian fitting of ks distribution</p></td>
+</tr>
+<tr class="row-even"><td><p>-pf</p></td>
+<td><p>PeaksFit</p></td>
+<td><p>Show all configured parameters</p></td>
+</tr>
+<tr class="row-odd"><td><p>-conf</p></td>
+<td><p>Configure</p></td>
+<td><p>Display and modify the environment variable</p></td>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Example</p>
-<p class="rubric">Modify</p>
-<p>Modify the parameters that are right for you to run.</p>
-<p class="rubric">Begin</p>
-<p>Use <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">–pf</span> <span class="pre">blockks.conf</span></code> to run the parameter file and output the results you want.</p>
-<img alt="_images/1.png" class="align-left" src="_images/1.png" />
 </div>
 
 
@@ -233,8 +248,8 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="bi.html" class="btn btn-neutral float-right" title="bi" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="c.html" class="btn btn-neutral float-left" title="correspondence" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to WGDI’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

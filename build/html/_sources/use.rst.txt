@@ -1,9 +1,6 @@
 usage 
 -----
 
-.. image :: _static/wgdi.png
-   :scale: 100%
-
 Point open the **Centents** on the left.
   
 We support the use of **WGDI** to complete the work on the icon number.
