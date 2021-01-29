@@ -28,7 +28,7 @@ grading          Type: **int** , **int** ,**int**  |  Default: **50**, **40** , 
 ---------------- ------------------------------------------------------------------------  
 mg               Type: **int** , **int**   |  Default: **40**, **40** 
 
-                 The maximum clearance length (mg) is an important parameter for detecting collinear regions.
+                 The maximum gap(mg) value is an important parameter for detecting collinear regions.
 ---------------- ------------------------------------------------------------------------ 
 pvalue            Type: **float**  |    Default: **1**
 
@@ -36,7 +36,7 @@ pvalue            Type: **float**  |    Default: **1**
 ---------------- ------------------------------------------------------------------------ 
 repeat_number    Type: **int** |   Default: **10**
   
-                 The maximum number of homologous genes is allowed to be removed more than part of the population.
+                 The maximum number of homologous genes is allowed to oved more than part of the population.
 ---------------- ------------------------------------------------------------------------   
 process          Type: **int**  |  Default: **8**
 
@@ -44,7 +44,7 @@ process          Type: **int**  |  Default: **8**
 ---------------- ------------------------------------------------------------------------   
 position         Type: **order**  |  Default: **order**
 
-                 The position of the gene corresponds to the gff file.
+                 The position of a gene corresponds to the gff file.
 ================ ========================================================================
 
 Use command to enter the folder ``wgdi -icl ? >> total.conf`` Take out the parameter file.

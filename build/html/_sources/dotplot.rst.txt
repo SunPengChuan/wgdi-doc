@@ -1,7 +1,7 @@
 Dotplot
 -------
 
-Dotplot is show homologous gene dotplot.
+Dotplot shows homologous gene dotplot.
 
   
 .. rubric:: Parameters
@@ -21,7 +21,7 @@ multiple         Type: **int**   |    Default: **1**
 ---------------- ------------------------------------------------------------------------         
 score            Type: **int**    |     Default: **100**
 
-                 Score value in the blast results.
+                 Score value in blast result.
 ---------------- ------------------------------------------------------------------------
 evalue           Type: **float**  |  Default: **1e-5**
 
@@ -33,7 +33,7 @@ repeat_number    Type: **int**  |  Default: **10**
 ---------------- ------------------------------------------------------------------------  
 position         Type: {**order**, **start** , **end** }  |  Default: **order**
 
-                 The position of the gene corresponds to the gff file.
+                 The position of a gene corresponds to the gff file.
 ---------------- ------------------------------------------------------------------------  
 ancestor_left    Type: **file**  |  Default: **none**
 

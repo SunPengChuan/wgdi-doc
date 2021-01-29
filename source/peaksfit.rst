@@ -44,7 +44,7 @@ savefile         Type: {\*. **png**,\*. **pdf**, \*. **svg**}  |  Default: \*. *
                  Save pictures support png, pdf, svg formats.
 ================ ========================================================================
 
-Use command to enter the folder ``wgdi -pf ? > blockks.conf`` Take out the parameter file.
+Use command to enter the folder ``wgdi -pf ? >> total.conf`` Take out the parameter file.
 
 .. code-block:: python
 

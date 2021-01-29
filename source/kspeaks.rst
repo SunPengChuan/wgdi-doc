@@ -60,7 +60,7 @@ savefile         Type: **file**   |  Default: \* **.csv**
 
 .. rubric:: Parameters
 
-Use command to enter the folder ``wgdi -kp ? > kp.conf`` Take out the parameter file.::
+Use command to enter the folder ``wgdi -kp ? >> total.conf`` Take out the parameter file.::
 
   [kspeaks]
 

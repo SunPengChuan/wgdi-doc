@@ -24,11 +24,11 @@ evalue           Type: **float**   |  Default: **1e-5**
 ---------------- ------------------------------------------------------------------------
 repeat_number    Type: **int**  |   Default: **10**
   
-                 The maximum number of homologous genes is allowed to be removed more than part of the population.
+                 The maximum number of homologous genes is allowed to removed more than part of the population.
 ---------------- ------------------------------------------------------------------------
 position         Type: {**order**}  |   Default: **order**
 
-                 The position of the gene corresponds to the gff file.
+                 The position of a gene corresponds to the gff file.
 ---------------- ------------------------------------------------------------------------
 ks               Type: **file**  |    Default: **-**
                      
@@ -115,7 +115,7 @@ block1,block2     Type: **str**
 ----------------- ------------------------------------------------------------------------
 ks                Type: **str**
 
-                  The position of the gene corresponds to the gff file.
+                  The position of a gene corresponds to the gff file.
 ----------------- ------------------------------------------------------------------------
 density1,density2 Type: **float**
                      

@@ -22,7 +22,7 @@ align_software   Type:{ **muscle**, **mafft** }  |   Default: **muscle**
 ---------------- ------------------------------------------------------------------------
 pairs_file       Type: **file**   |  Default: **-**
 
-                 The same gene pairs of ks need to be calculated, either by pressing, or separating the list, or as the output of ColinearScan.
+                 Colinearscan or MCScanX result file or gene pairs divided by tab.
 ---------------- ------------------------------------------------------------------------
 ks_file          Type: **file**  |  Default: **-**
 

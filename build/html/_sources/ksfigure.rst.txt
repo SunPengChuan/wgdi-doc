@@ -43,12 +43,12 @@ figsize          Type: **int,int** |  Default: **10,10**
 
                  Control the proportion of the size of the saved picture.
 ---------------- ------------------------------------------------------------------------
-savefile         Type: {\*. **png**,\*. **pdf**, \*. **svg**}  |  Default: \*. **png**
+savefig          Type: {\*. **png**,\*. **pdf**, \*. **svg**}  |  Default: \*. **png**
 
                  Save pictures support png, pdf, svg formats.
 ================ ========================================================================
 
-Use command to enter the folder ``wgdi -kf ? > blockks.conf`` Take out the parameter file.
+Use command to enter the folder ``wgdi -kf ? >> total.conf`` Take out the parameter file.
 
 .. code-block:: python
 

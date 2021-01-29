@@ -36,7 +36,7 @@ block_length     Type: **int**   |   Default: **5**
 ---------------- ------------------------------------------------------------------------
 position         Type: {**order**, **start** , **end** }  |  Default: **order**
 
-                 The position of the gene corresponds to the gff file.
+                 The position of a gene corresponds to the gff file.
 ---------------- ------------------------------------------------------------------------
 markersize       Type: **float**   | Default: **0.5**
 

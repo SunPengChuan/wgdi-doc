@@ -44,7 +44,7 @@ savefile         Type: **file**   |  Default: \* **.csv**
                  The resulting file.
 ================ ========================================================================
 
-Use command to enter the folder ``wgdi -c ? > blockks.conf`` Take out the parameter file.
+Use command to enter the folder ``wgdi -c ? >> total.conf`` Take out the parameter file.
 
 .. code-block:: python
 
