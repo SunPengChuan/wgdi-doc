@@ -1,0 +1,77 @@
+Contents
+--------
+  
+We support the use of **WGDI** to complete the work on the icon number.
+
+.. toctree::
+
+   dotplot
+   collinearity
+   ks
+   blockinfo
+   correspondence
+   blockks
+   kspeaks
+   peaksfit
+   ksfigure
+   a
+   ci
+   retain
+   c
+   
+  
+
+
+**Common file**
+
+
+* conf
+
+The conf file contains the parameters required for the corresponding operation, which are read when WGDI is performed.
+Using ``wgdi -* ? > *.conf`` to get the configuration file in the current directory and modify it to run.
+If you don't know which files are needed, you can view it through ``wgdi -* ?`` or ``wgdi -* help`` , or ``wgdi -* example``. These three commands are equivalent.
+
+In conf file: **gff1** , **lens1** , **genome1_name** and **gff2**,  **lens2**, **genome2_name** represent the files of species 1 and 2 respectively. 
+We will no longer explain these in this documentation.
+
+* gff
+
+.. tabularcolumns:: column spec
+
+====== ============ ======================================================
+Column Information  Explanation
+1      Chr          Chromosome number 
+2      Id           Gene name
+3      Strat        The location of the gene 
+4      End          Gene ending position
+5      Direction    Direction of the gene sequence
+6      Order        Order is the order of each chromosome starting from 1
+7      Original     Original id and  not read
+====== ============ ======================================================
+
+.. image :: _static/vv1s.gff.png
+
+
+* lens
+
+.. tabularcolumns:: column spec
+
+========= =========== =========================================
+Column    Information Explanation                   
+1         Chr         Chromosome number
+2         Length      Length of chromosome sequences
+3         Order       Number of chromosome genes      
+========= =========== =========================================
+
+.. image :: _static/vv1s.lens.png
+
+*  The explosion is the output file of the `blast+ <ftp://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST/>`_ , available in  -6 outformat.
+
+
+**Tips**
+
+* You can use ``wgdi -conf ? > total.conf`` generates a **total.conf** file with all parameters, and when you modify the parameters and run WGDI, WGDI will only read the parameters corresponding to the total.conf file to execute your command.
+
+* When a folder runs WGDI, WGDI automatically generates results for you in the background, and you can exit the folder and go to the next folder to start working.
+
+* WGDI performs the **conf** file for the current folder, so you can copy the **conf** file in bulk and make parameter modifications that apply to the target folder.

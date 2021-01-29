@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>usage &mdash; WGDI latest documentation</title>
+  <title>Contents &mdash; WGDI latest documentation</title>
   
 
   
@@ -91,7 +91,7 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">usage</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contents</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="dotplot.html">Dotplot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="collinearity.html">Improved collinearity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ks.html">Non-synonymous (Ka) and synonymous (Ks)</a></li>
@@ -100,6 +100,7 @@
 <li class="toctree-l2"><a class="reference internal" href="blockks.html">BlockKs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kspeaks.html">KsPeaks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="peaksfit.html">PeaksFit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ksfigure.html">KsFigure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="a.html">align</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ci.html">circos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="retain.html">retain</a></li>
@@ -154,13 +155,13 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>usage</li>
+      <li>Contents</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/use.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Contents.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -173,11 +174,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="usage">
-<h1>usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
-<p>Point open the <strong>Centents</strong> on the left.</p>
+  <div class="section" id="contents">
+<h1>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h1>
 <p>We support the use of <strong>WGDI</strong> to complete the work on the icon number.</p>
-<p><strong>Contents</strong></p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="dotplot.html">Dotplot</a></li>
@@ -188,6 +187,7 @@
 <li class="toctree-l1"><a class="reference internal" href="blockks.html">BlockKs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kspeaks.html">KsPeaks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="peaksfit.html">PeaksFit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ksfigure.html">KsFigure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="a.html">align</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ci.html">circos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="retain.html">retain</a></li>
@@ -198,14 +198,11 @@
 <ul class="simple">
 <li><p>conf</p></li>
 </ul>
-<p>The .conf file contains the parameters required for the corresponding operation, which are read when WGDI is performed.
-Using <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-*</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">*.conf</span></code> to generate needs to be in the same directory as the file mentioned in the parameter.
-And total.conf contains all the parameters, using <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-conf</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">total.conf</span></code> is generated.</p>
-<p>If you don’t know which files are needed, you can view it through ‘’wgdi -parm? ‘’ ,’’wgdi -parm help’’, or’’wgdi -parm example’’ .These three commands are equivalent.</p>
-<p>In the <strong>conf file</strong>: <strong>gff1</strong>, <strong>lens1</strong>, <strong>gff2</strong>, and <strong>lens2</strong> represent the files of species 1 and 2, respectively.</p>
-<p>We will not explain in detail when we explain the parameters.</p>
-<p><strong>genome1_name</strong> and <strong>genome1_name</strong> represent the names of species 1 and 2, respectively.
-These parameters will be used to label the picture for your convenience.</p>
+<p>The conf file contains the parameters required for the corresponding operation, which are read when WGDI is performed.
+Using <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-*</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">*.conf</span></code> to get the configuration file in the current directory and modify it to run.
+If you don’t know which files are needed, you can view it through <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-*</span> <span class="pre">?</span></code> or <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-*</span> <span class="pre">help</span></code> , or <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-*</span> <span class="pre">example</span></code>. These three commands are equivalent.</p>
+<p>In conf file: <strong>gff1</strong> , <strong>lens1</strong> , <strong>genome1_name</strong> and <strong>gff2</strong>,  <strong>lens2</strong>, <strong>genome2_name</strong> represent the files of species 1 and 2 respectively.
+We will no longer explain these in this documentation</p>
 <ul class="simple">
 <li><p>gff</p></li>
 </ul>
@@ -281,14 +278,13 @@ These parameters will be used to label the picture for your convenience.</p>
 </table>
 <img alt="_images/vv1s.lens.png" src="_images/vv1s.lens.png" />
 <ul class="simple">
-<li><p>The explosion is the output file of the <a class="reference external" href="ftp://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST/">blast+</a> ,available in the -6 and m-8 formats..</p></li>
+<li><p>The explosion is the output file of the <a class="reference external" href="ftp://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST/">blast+</a> , available in  -6 outformat.</p></li>
 </ul>
-<p><strong>Convenient</strong></p>
+<p><strong>Tips</strong></p>
 <ul class="simple">
-<li><p>You can use <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-conf</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">total.conf</span></code> generates a <strong>total.conf</strong> file with all parameters, and when you modify the parameters and run <strong>WGDI</strong>, <strong>WGDI</strong> will only read the parameters corresponding to the <strong>total.conf</strong> file to execute your command.</p></li>
-<li><p>We put in the example of <strong>git</strong>’s official website, where all parameters are in the <strong>total.conf</strong> file.</p></li>
-<li><p>When a folder runs <strong>WGDI</strong>, <strong>WGDI</strong> automatically generates results for you in the background, and you can exit the folder and go to the next folder to start working.</p></li>
-<li><p><strong>WGDI</strong> performs the <strong>.conf</strong> file for the current folder, so you can copy the <strong>.conf</strong> file in bulk and make parameter modifications that apply to the target folder.</p></li>
+<li><p>You can use <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-conf</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">total.conf</span></code> generates a <strong>total.conf</strong> file with all parameters, and when you modify the parameters and run WGDI, WGDI will only read the parameters corresponding to the total.conf file to execute your command.</p></li>
+<li><p>When a folder runs WGDI, WGDI automatically generates results for you in the background, and you can exit the folder and go to the next folder to start working.</p></li>
+<li><p>WGDI performs the <strong>conf</strong> file for the current folder, so you can copy the <strong>conf</strong> file in bulk and make parameter modifications that apply to the target folder.</p></li>
 </ul>
 </div>
 

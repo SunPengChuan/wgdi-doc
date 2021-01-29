@@ -51,7 +51,7 @@ figsize          Type: **int,int** |  Default: **10,10**
 
                  Control the proportion of the size of the saved picture.
 ---------------- ------------------------------------------------------------------------  
-savefile         Type: {\*. **png**,\*. **pdf**}  |  Default: \*. **png**
+savefig          Type: {\*. **png**,\*. **pdf**}  |  Default: \*. **png**
 
                  Save pictures support png, pdf, svg formats.
 ================ ========================================================================

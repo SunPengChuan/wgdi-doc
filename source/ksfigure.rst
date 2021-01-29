@@ -1,0 +1,76 @@
+KsFigure
+--------
+
+A simple way to draw ks distribution map.
+
+  
+.. rubric:: Parameters
+
+.. tabularcolumns:: column spec
+
+================ ========================================================================
+Parameters        Standards and instructions
+---------------- ------------------------------------------------------------------------
+ksfit            Type: **file**  |    Default: **.csv**
+                     
+                 Output result of parameter `kp` or filtered.
+---------------- ------------------------------------------------------------------------
+labelfontsize    Type: **float**   | Default: **15**
+
+                 Different processing methods of ks value on collinearity block.
+---------------- ------------------------------------------------------------------------
+legendfontsize   Type: **float** |  Default: **15**
+                     
+                 The fontsize of legend in the plot.
+---------------- ------------------------------------------------------------------------
+xlabel           Type: **str**   | Default: **none**
+
+                 The xlabel of figure.
+---------------- ------------------------------------------------------------------------
+ylabel           Type: **str**   | Default: **none**
+
+                 The ylabel of figure.
+---------------- ------------------------------------------------------------------------
+title            Type: **str**   | Default: **none**
+
+                 The title of figure.
+---------------- ------------------------------------------------------------------------
+area             Type: **str**   Default: **0,3**
+                     
+                 Show the range of ks.
+---------------- ------------------------------------------------------------------------
+figsize          Type: **int,int** |  Default: **10,10**
+
+                 Control the proportion of the size of the saved picture.
+---------------- ------------------------------------------------------------------------
+savefile         Type: {\*. **png**,\*. **pdf**, \*. **svg**}  |  Default: \*. **png**
+
+                 Save pictures support png, pdf, svg formats.
+================ ========================================================================
+
+Use command to enter the folder ``wgdi -kf ? > blockks.conf`` Take out the parameter file.
+
+.. code-block:: python
+
+    [ksfigure]
+    ksfit = ksfit result(*.csv)
+    labelfontsize = 15
+    legendfontsize = 15
+    xlabel = none
+    ylabel = none
+    title = none
+    area = 0,2
+    figsize = 10,6.18
+    savefig =  save image
+
+.. rubric:: Quick start
+
+After the parameters are modified properly, then run ``wgdi -kf total.conf`` 
+
+
+.. rubric:: Example
+
+The original results are easily accessible at `wgdi-example <https://github.com/SunPengChuan/wgdi-example>`_
+
+.. image :: _static/all_ks.svg
+   :align: left

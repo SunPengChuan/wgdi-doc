@@ -90,7 +90,7 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="use.html">usage</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="Contents.html">Contents</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="dotplot.html">Dotplot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="collinearity.html">Improved collinearity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ks.html">Non-synonymous (Ka) and synonymous (Ks)</a></li>
@@ -99,6 +99,7 @@
 <li class="toctree-l2"><a class="reference internal" href="blockks.html">BlockKs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kspeaks.html">KsPeaks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="peaksfit.html">PeaksFit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ksfigure.html">KsFigure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="a.html">align</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ci.html">circos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="retain.html">retain</a></li>
@@ -153,7 +154,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="use.html">usage</a> &raquo;</li>
+          <li><a href="Contents.html">Contents</a> &raquo;</li>
         
       <li>correspondence</li>
     
@@ -193,8 +194,8 @@
 </div>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 17%" />
-<col style="width: 83%" />
+<col style="width: 12%" />
+<col style="width: 88%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Parameters</p></td>
@@ -218,10 +219,8 @@
 </td>
 </tr>
 <tr class="row-even"><td><p>pvalue</p></td>
-<td><p>Type: str     Default: 0.05</p>
-<blockquote>
-<div><p>P-value in collinear results.</p>
-</div></blockquote>
+<td><p>Type: <strong>float</strong>  |    Default: <strong>1</strong></p>
+<p>Evaluate the compactness and uniqueness of collinear blocks, the range is 0-1, the better collinearity range is 0-0.2.</p>
 </td>
 </tr>
 <tr class="row-odd"><td><p>block_length</p></td>
@@ -239,13 +238,8 @@
 </td>
 </tr>
 <tr class="row-odd"><td><p>homo</p></td>
-<td><p>Type: str     Default: 0,1</p>
-<blockquote>
-<div><blockquote>
-<div><p>Collinear fragments favor the best matching values,</p>
-</div></blockquote>
-<p>with a range of -1, 1.</p>
-</div></blockquote>
+<td><p>Type: <strong>int [1-5]</strong>   Default: <strong>1</strong></p>
+<p>Evaluate the ratio of the best homologous gene pairs of collinearity block, with a range of -1, 1.</p>
 </td>
 </tr>
 <tr class="row-even"><td><p>savefile</p></td>

@@ -3,13 +3,68 @@ KsPeaks
 
 kspeaks is a simple way to get ks peaks.
    
+
+.. tabularcolumns:: column spec
+
+================ ========================================================================
+Parameters       Standards and instructions
+---------------- ------------------------------------------------------------------------
+blockinfo        Type: **file**  |    Default: **-**
+                     
+                 Output result of parameter `bi`
+---------------- ------------------------------------------------------------------------
+pvalue           Type: **float**  |    Default: **0.05**
+
+                 Evaluate the compactness and uniqueness of collinear blocks, the range is 0-1, the better collinearity range is 0-0.2.
+---------------- ------------------------------------------------------------------------ 
+tandem           Type:str   |   Default: true
+                     
+                 The criterion is that there are no more than 200 genes with a difference in genetic location.
+---------------- ------------------------------------------------------------------------  
+block_length     Type: **int**   |   Default: **5**
+                  
+                 Minimum length of collinear blocks.
+---------------- ------------------------------------------------------------------------  
+ks_area          Type: **str**  |   Default: **0,10**
+                     
+                 Show the range of ks.
+---------------- ------------------------------------------------------------------------  
+multiple         Type: **int**   |    Default: **1**
+
+                 The best number of homologous genes shown with red dots.
+---------------- ------------------------------------------------------------------------  
+homo             Type: **int [1-5]**   Default: **1**
+
+                 Evaluate the ratio of the best homologous gene pairs of collinearity block, with a range of -1, 1.
+---------------- ------------------------------------------------------------------------  
+fontsize         Type: **str**      Default: **9**
+                      
+                 The size of the font.
+---------------- ------------------------------------------------------------------------  
+area             Type: **str**   Default: **0,3**
+                     
+                 Show the range of ks.
+---------------- ------------------------------------------------------------------------  
+figsize          Type: **int,int** |  Default: **10,10**
+
+                 Control the proportion of the size of the saved picture.
+---------------- ------------------------------------------------------------------------  
+savefig          Type: {\*. **png**, \*. **pdf**, \*. **svg**}  |  Default: \*. **png**
+
+                 Save pictures support png, pdf, svg formats.
+---------------- ------------------------------------------------------------------------  
+savefile         Type: **file**   |  Default: \* **.csv**
+                    
+                 The resulting file.
+================ ========================================================================
+
 .. rubric:: Parameters
 
 Use command to enter the folder ``wgdi -kp ? > kp.conf`` Take out the parameter file.::
 
   [kspeaks]
 
-   blockinfo = block information (*.csv)
+   blockinfo = block information
    pvalue = 0.05
    tandem = true
    block_ length = int number
@@ -19,76 +74,17 @@ Use command to enter the folder ``wgdi -kp ? > kp.conf`` Take out the parameter 
    fontsize = 9
    area = 0,3
    figsize = 10,6.18
-   savefig = saving image(.png,.pdf)
+   savefig = saving image
    savefile = ks medain savefile
 
-.. tabularcolumns:: column spec
+.. rubric:: Quick start
 
-================ ========================================================================
-Parameters        Standards and instructions
----------------- ------------------------------------------------------------------------
-blockinfo         Type: str     Default: -
-                     
-					 Integrate collinear and ks files.
----------------- ------------------------------------------------------------------------
-pvalue            Type:str     Default: 0.05 
+After the parameters are modified properly, then run ``wgdi -kp total.conf`` 
 
-                     P-value in collinear results.
----------------- ------------------------------------------------------------------------	  
-tandem            Type:str     Default: true
-                     
-					 The criterion is that there are no more than 200 genes 
-				  
-				  with a difference in genetic location.
----------------- ------------------------------------------------------------------------	  
-block_length      Type:str     Default: int number 
-                  
-				     Minimum length of collinear blocks.
----------------- ------------------------------------------------------------------------	  
-ks_area           Type:str     Default: 0,10 
-                     
-					 Show the range of ks.
----------------- ------------------------------------------------------------------------	  
-multiple          Type:str     Default: 1
-                  
-				     The optimal number of homologous genes.
----------------- ------------------------------------------------------------------------	  
-homo              Type:str     Default: 0,1
-                  
-				     Collinear fragments favor the best matching values, 
-					 
-				  with a range of -1, 1.
----------------- ------------------------------------------------------------------------	  
-fontsize          Type:str     Default: 9 
-                      
-				     The size of the font.
----------------- ------------------------------------------------------------------------	  
-area              Type:str     Default: 0,3
-                  
-				     The extent of the drawing display.
----------------- ------------------------------------------------------------------------	  
-figsize           Type:str     Default: 10,6.18
-                  
-				     The size ratio of the image
----------------- ------------------------------------------------------------------------	  
-savefig           Type:{\*.png, \*.pdf}     Default: \*.png 
-                     
-					 Save pictures support png, PDF formats.
----------------- ------------------------------------------------------------------------	  
-savefile          Type:*.csv     Default: \*.csv 
-                         
-				     Save pictures support csv formats.
-================ ========================================================================
 
 .. rubric:: Example
 
-.. rubric:: Modify
+The original results are easily accessible at `wgdi-example <https://github.com/SunPengChuan/wgdi-example>`_
 
-Modify the parameters that are right for you to run.
-
-.. rubric:: Begin
-
-Use ``wgdi -kp kp.conf`` to run the parameter file and output the results you want.
-
-.. image :: _static/1.png
+.. image :: _static/vvi161s_vvi161s.kspeaks.png
    :align: left

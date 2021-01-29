@@ -9,7 +9,7 @@ WGDI subroutine and function
 +----------------------------+-------------------------------------------------------------------------------------------+
 |       Parameters           | Functions                                                                                 |
 +=========+==================+===========================================================================================+
-| -h      | Help             | Show this help message and exit                                                           |
+| -h      | Help             | Show help message and exit                                                                |
 +---------+------------------+-------------------------------------------------------------------------------------------+
 | -v      | Version          | Show program's version number                                                             |
 +---------+------------------+-------------------------------------------------------------------------------------------+
@@ -31,9 +31,9 @@ WGDI subroutine and function
 +---------+------------------+-------------------------------------------------------------------------------------------+
 | -a      | Alignment        | Collinear genes construct phylogenetic trees                                              |
 +---------+------------------+-------------------------------------------------------------------------------------------+
-| -at     | AlignmentTrees   | Polyploidy-index characterize the degree of divergence Between subgenomes of a polyploidy |
+| -at     | AlignmentTrees   | Polyploidy-index characterize the degree of divergence among subgenomes of a polyploidy   |
 +---------+------------------+-------------------------------------------------------------------------------------------+
-| -p      | P-index          | Polyploidy-index characterize the degree of divergence between subgenomes of a polyploidy |
+| -p      | P-index          | Polyploidy-index characterize the degree of divergence among subgenomes of a polyploidy   |
 +---------+------------------+-------------------------------------------------------------------------------------------+
 | -r      | Retain           | Show subgenomes in gene retention or genome fractionation                                 |
 +---------+------------------+-------------------------------------------------------------------------------------------+

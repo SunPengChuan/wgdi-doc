@@ -33,10 +33,10 @@ tandem            Type: {true,false}     Default: true
 				  
 				  with a difference in genetic location.
 ---------------- ------------------------------------------------------------------------
-pvalue            Type: str     Default: 0.05 
+pvalue            Type: **float**  |    Default: **1**
 
-                     P-value in collinear results.
----------------- ------------------------------------------------------------------------
+                  Evaluate the compactness and uniqueness of collinear blocks, the range is 0-1, the better collinearity range is 0-0.2.
+---------------- ------------------------------------------------------------------------ 
 block_length      Type: str     Default: int number 
                   
 				     Minimum length of collinear blocks.
@@ -45,11 +45,9 @@ multiple          Type: str     Default: 1
                   
 				     The optimal number of homologous genes.
 ---------------- ------------------------------------------------------------------------
-homo              Type: str     Default: 0,1
-                  
-				     Collinear fragments favor the best matching values, 
-					 
-				  with a range of -1, 1.
+homo             Type: **int [1-5]**   Default: **1**
+
+                 Evaluate the ratio of the best homologous gene pairs of collinearity block, with a range of -1, 1.
 ---------------- ------------------------------------------------------------------------
 savefile          Type: \*.csv     Default: \*.csv 
                          

@@ -22,7 +22,7 @@ Table of Contents
 
    Introduction
    Installation
-   use
+   Contents
 
 Contact
 -------

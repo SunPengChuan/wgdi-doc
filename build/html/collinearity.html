@@ -91,7 +91,7 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="use.html">usage</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="Contents.html">Contents</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="dotplot.html">Dotplot</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Improved collinearity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ks.html">Non-synonymous (Ka) and synonymous (Ks)</a></li>
@@ -100,6 +100,7 @@
 <li class="toctree-l2"><a class="reference internal" href="blockks.html">BlockKs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kspeaks.html">KsPeaks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="peaksfit.html">PeaksFit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ksfigure.html">KsFigure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="a.html">align</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ci.html">circos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="retain.html">retain</a></li>
@@ -154,7 +155,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="use.html">usage</a> &raquo;</li>
+          <li><a href="Contents.html">Contents</a> &raquo;</li>
         
       <li>Improved collinearity</li>
     
@@ -213,17 +214,22 @@
 <p>The maximum clearance length (mg) is an important parameter for detecting collinear regions.</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p>repeat_number</p></td>
+<tr class="row-odd"><td><p>pvalue</p></td>
+<td><p>Type: <strong>float</strong>  |    Default: <strong>1</strong></p>
+<p>Evaluate the compactness and uniqueness of collinear blocks, the range is 0-1, the better collinearity range is 0-0.2.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>repeat_number</p></td>
 <td><p>Type: <strong>int</strong> |   Default: <strong>10</strong></p>
 <p>The maximum number of homologous genes is allowed to be removed more than part of the population.</p>
 </td>
 </tr>
-<tr class="row-even"><td><p>process</p></td>
+<tr class="row-odd"><td><p>process</p></td>
 <td><p>Type: <strong>int</strong>  |  Default: <strong>8</strong></p>
 <p>Number of multiple processes.</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p>position</p></td>
+<tr class="row-even"><td><p>position</p></td>
 <td><p>Type: <strong>order</strong>  |  Default: <strong>order</strong></p>
 <p>The position of the gene corresponds to the gff file.</p>
 </td>

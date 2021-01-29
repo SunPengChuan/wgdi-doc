@@ -30,6 +30,10 @@ mg               Type: **int** , **int**   |  Default: **40**, **40**
 
                  The maximum clearance length (mg) is an important parameter for detecting collinear regions.
 ---------------- ------------------------------------------------------------------------ 
+pvalue            Type: **float**  |    Default: **1**
+
+                  Evaluate the compactness and uniqueness of collinear blocks, the range is 0-1, the better collinearity range is 0-0.2.
+---------------- ------------------------------------------------------------------------ 
 repeat_number    Type: **int** |   Default: **10**
   
                  The maximum number of homologous genes is allowed to be removed more than part of the population.
