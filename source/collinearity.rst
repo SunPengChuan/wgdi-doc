@@ -24,19 +24,19 @@ score            Type: **int**  |  Default: **100**
 ---------------- ------------------------------------------------------------------------  
 grading          Type: **int** , **int** ,**int**  |  Default: **50**, **40** , **25**
 
-                 assigns different scores based on the colors in the dotplot, with a default of 50 for red, 40 for blue, and 25 for gray.
+                 Assigns different scores based on the colors in the dotplot, with a default of 50 for red, 40 for blue, and 25 for gray.
 ---------------- ------------------------------------------------------------------------  
 mg               Type: **int** , **int**   |  Default: **40**, **40** 
 
                  The maximum gap(mg) value is an important parameter for detecting collinear regions.
 ---------------- ------------------------------------------------------------------------ 
-pvalue            Type: **float**  |    Default: **1**
+pvalue           Type: **float**  |    Default: **1**
 
-                  Evaluate the compactness and uniqueness of collinear blocks, the range is 0-1, the better collinearity range is 0-0.2.
+                 Evaluate the compactness and uniqueness of collinear blocks, the range is 0-1, the better collinearity range is 0-0.2.
 ---------------- ------------------------------------------------------------------------ 
 repeat_number    Type: **int** |   Default: **10**
   
-                 The maximum number of homologous genes is allowed to oved more than part of the population.
+                 The maximum number of homologous genes is allowed to removed more than part of the population.
 ---------------- ------------------------------------------------------------------------   
 process          Type: **int**  |  Default: **8**
 

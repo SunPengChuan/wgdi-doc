@@ -1,5 +1,5 @@
-Contents
---------
+Usage
+-----
   
 We support the use of **WGDI** to complete the work on the icon number.
 
@@ -17,11 +17,8 @@ We support the use of **WGDI** to complete the work on the icon number.
    alignment
    retain
    pindex
-   ci
+   circos
    
-  
-
-
 **Common file**
 
 
@@ -49,9 +46,6 @@ Column Information  Explanation
 7      Original     Original id and  not read
 ====== ============ ======================================================
 
-.. image :: _static/vv1s.gff.png
-
-
 * lens
 
 .. tabularcolumns:: column spec
@@ -63,8 +57,6 @@ Column    Information Explanation
 3         Order       Number of chromosome genes      
 ========= =========== =========================================
 
-.. image :: _static/vv1s.lens.png
-
 *  blast
 
 The protein-coding genes from each genome were compared against itself and other genomes using `BLASTP <ftp://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST/>`_  (e-value < 10-5, and outfmt = 6) or other similar protein sequence searching software ( `MMseqs2 <https://github.com/soedinglab/MMseqs2>`_ , `DIAMOND <https://github.com/bbuchfink/diamond>`_ ).
@@ -75,4 +67,4 @@ The protein-coding genes from each genome were compared against itself and other
 
 * When a folder runs WGDI, WGDI automatically generates results for you in the background, and you can exit the folder and go to the next folder to start working.
 
-* WGDI performs the **conf** file for the current folder, so you can copy the **conf** file in bulk and make parameter modifications that apply to the target folder.
+* WGDI performs the **conf** file for the current folder, so you can copy the **conf** file in bulk and make parameter modifications appied to the target folder.

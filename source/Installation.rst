@@ -1,7 +1,8 @@
 Installation
 ------------
 
-Python package and command line interface (IDLE) for the analysis of whole genome duplications (WGDI). The environment required for installation is python3.
+Python package and command line interface (IDLE) for the analysis of whole genome duplications (WGDI). 
+WGDI can be deployed in Windows, Linux, and Mac OS operating systems and can be installed via pip and conda. 
 
 **Bioconda**
 
@@ -29,7 +30,7 @@ Some parts of WGDI use the following third-party softwares:
 
 `PAML <http://abacus.gene.ucl.ac.uk/software/paml.html>`_  |  `MAFFT <https://mafft.cbrc.jp/alignment/software/>`_  | `MUSCLE <http://www.drive5.com/muscle/downloads.htm>`_  | `PAL2NAL <http://www.bork.embl.de/pal2nal/#Download>`_ `IQTREE <http://www.iqtree.org/#download>`_ 
 
-After you download and install the above package. You can run ``wgdi -conf help > conf.ini`` to configure the path of the existing software.
+After you download and install the above packages. You can run ``wgdi -conf help > conf.ini`` to configure the path of the existing software.
 
 .. code-block:: python
 

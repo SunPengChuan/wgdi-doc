@@ -4,7 +4,17 @@ Introduction
 
 .. image :: _static/workflow.png
 
-WGDI subroutine and function
+
+The WGDI workﬂow consists of three main parts: **(1)** Polyploidy inference using Dotplot, Collinearity extraction, Ks distributions 
+**(2)** Hierarchical inference of genomic homology resulted from recursive paleopolyploidizations. 
+**(3)** Subgenomic and ancestral genome reconstruction and other evolutionary scenarios.
+
+WGDI contains multiple subroutines, the user only needs to modify the configuration file simply, and then enter the name of the subroutine to be executed, 
+Such as ``wgdi -d your.conf``.  In the following, we will describe in detail the subroutines of WGDI software.
+
+
+**WGDI subroutine and function**
+
 
 +----------------------------+-------------------------------------------------------------------------------------------+
 |       Parameters           | Functions                                                                                 |
@@ -29,9 +39,9 @@ WGDI subroutine and function
 +---------+------------------+-------------------------------------------------------------------------------------------+
 | -pf     | PeaksFit         | Gaussian fitting of ks distribution                                                       |
 +---------+------------------+-------------------------------------------------------------------------------------------+
-| -a      | Alignment        | Collinear genes construct phylogenetic trees                                              |
+| -a      | Alignment        | Show event-related genomic alignment in a dotplot                                         |
 +---------+------------------+-------------------------------------------------------------------------------------------+
-| -at     | AlignmentTrees   | Polyploidy-index characterize the degree of divergence among subgenomes of a polyploidy   |
+| -at     | AlignmentTrees   | Phylogenetic trees constructed by collinear genes                                         |
 +---------+------------------+-------------------------------------------------------------------------------------------+
 | -p      | P-index          | Polyploidy-index characterize the degree of divergence among subgenomes of a polyploidy   |
 +---------+------------------+-------------------------------------------------------------------------------------------+

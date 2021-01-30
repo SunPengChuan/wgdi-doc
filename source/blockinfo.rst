@@ -40,7 +40,7 @@ ks_col           Type: **str**    Default: **NG86**
 ---------------- ------------------------------------------------------------------------
 savefile         Type: **file**   |  Default: \* **.csv**
                     
-                 The resulting file.
+                 Result file.
 ================ ========================================================================
 
 Use command to enter the folder ``wgdi -bi ? >> total.conf`` Take out the parameter file.
