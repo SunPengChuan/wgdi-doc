@@ -1,7 +1,7 @@
 Correspondence
 ---------------------
 
-Extract event-related genomic alignment
+Extract event-related genomic alignment.
 
  
 .. rubric:: Parameters

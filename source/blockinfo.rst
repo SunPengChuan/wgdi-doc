@@ -36,7 +36,7 @@ ks               Type: **file**  |    Default: **-**
 ---------------- ------------------------------------------------------------------------
 ks_col           Type: **str**    Default: **NG86**
 
-                 The result calculated by ks_YN00 or other methods is a single column
+                 The result calculated by ks_YN00 or other methods is a single column.
 ---------------- ------------------------------------------------------------------------
 savefile         Type: **file**   |  Default: \* **.csv**
                     
@@ -95,7 +95,7 @@ pvalue            Type: **float**
 ----------------- ------------------------------------------------------------------------
 lentgth           Type: **int**
                      
-                  lentgth of collinearity block.
+                  The lentgth of collinearity block.
 ----------------- ------------------------------------------------------------------------
 ks_median         Type: **float**
 
