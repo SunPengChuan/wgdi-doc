@@ -24,7 +24,7 @@ evalue           Type: **float**   |  Default: **1e-5**
 ---------------- ------------------------------------------------------------------------
 repeat_number    Type: **int**  |   Default: **10**
   
-                 The maximum number of homologous genes is allowed to removed more than part of the population.
+                 The maximum number of homologous genes is allowed to remove more than part of the population.
 ---------------- ------------------------------------------------------------------------
 position         Type: {**order**}  |   Default: **order**
 
@@ -32,7 +32,7 @@ position         Type: {**order**}  |   Default: **order**
 ---------------- ------------------------------------------------------------------------
 ks               Type: **file**  |    Default: **-**
                      
-                 ks calculation results.
+                 Ks calculation results.
 ---------------- ------------------------------------------------------------------------
 ks_col           Type: **str**    Default: **NG86**
 
@@ -93,9 +93,9 @@ pvalue            Type: **float**
 
                   Evaluate the compactness and uniqueness of collinear blocks, the range is 0-1, the better collinearity range is 0-0.2.
 ----------------- ------------------------------------------------------------------------
-lentgth           Type: **int**
+length            Type: **int**
                      
-                  The lentgth of collinearity block.
+                  The length of collinearity block.
 ----------------- ------------------------------------------------------------------------
 ks_median         Type: **float**
 
@@ -115,7 +115,7 @@ block1,block2     Type: **str**
 ----------------- ------------------------------------------------------------------------
 ks                Type: **str**
 
-                  The position of a gene corresponds to the gff file.
+                  Output result of parameter `ks`.
 ----------------- ------------------------------------------------------------------------
 density1,density2 Type: **float**
                      

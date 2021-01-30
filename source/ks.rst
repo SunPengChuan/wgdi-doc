@@ -14,7 +14,7 @@ cds_file         Type: **file**  |   Default: **-**
 ---------------- ------------------------------------------------------------------------
 pep_file         Type: **file**   |  Default:  **-**
                   
-                 A protein file for one or more genomes. Non-essential file, if you do not write this parameter, Then this file will be translated through the biopython module cds-file.
+                 A protein file for one or more genomes. Non-essential file, if you do not write this parameter, then this file will be translated through the biopython module cds-file.
 ---------------- ------------------------------------------------------------------------
 align_software   Type:{ **muscle**, **mafft** }  |   Default: **muscle**
 

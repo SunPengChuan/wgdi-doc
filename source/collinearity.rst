@@ -36,7 +36,7 @@ pvalue           Type: **float**  |    Default: **1**
 ---------------- ------------------------------------------------------------------------ 
 repeat_number    Type: **int** |   Default: **10**
   
-                 The maximum number of homologous genes is allowed to removed more than part of the population.
+                 The maximum number of homologous genes is allowed to remove more than part of the population.
 ---------------- ------------------------------------------------------------------------   
 process          Type: **int**  |  Default: **8**
 
