@@ -10,7 +10,7 @@ Description
 -----------
 ::
 
-WGDI (identification of whole-genome duplication), a python-based command-line tool that allows researchers to gain insights into \
+WGDI (Whole-Genome Duplication Integrated analysis), a python-based command-line tool that allows researchers to gain insights into \
 recursive polyploidization and doing cross-species genomics alignment analysis. \
 
 The WGDI suite provides commonly used dotplot, ks, and collinearity analysis workflows together with tools for modeling and visualization, 
@@ -31,6 +31,16 @@ Table of Contents
    Introduction
    Installation
    usage
+
+Citating WGDI
+-------------
+
+If you use wgdi in your work, please cite:
+
+::
+
+Sun P, Jiao B, Yang Y, et al. WGDI: A user-friendly toolkit for evolutionary analyses of whole-genome duplications and ancestral karyotypes[J]. bioRxiv, 2021. **doi:** https://doi.org/10.1101/2021.04.29.441969
+
 
 Contact
 -------
