@@ -1,7 +1,7 @@
-KsFigure
+PeaksFit
 --------
 
-A simple way to draw ks distribution map.
+peaksfit is gaussian fitting of ks distribution.
 
   
 .. rubric:: Parameters
@@ -11,37 +11,29 @@ A simple way to draw ks distribution map.
 ================ ========================================================================
 Parameters        Standards and instructions
 ---------------- ------------------------------------------------------------------------
-ksfit            Type: **file**  |    Default: **.csv**
+blockinfo        Type: **file**  |    Default: **-**
                      
-                 Output result of parameter `kp` or filtered.
+                 Output result of parameter `bi`
 ---------------- ------------------------------------------------------------------------
-labelfontsize    Type: **float**   | Default: **15**
+mode             Type: {**median**, **average**, **total**}   | Default: **median**
 
                  Different processing methods of ks value on collinearity block.
 ---------------- ------------------------------------------------------------------------
-legendfontsize   Type: **float** |  Default: **15**
+tandem_length    Type: **int**   | Default: **200**
+
+                 If tandem=true, the maximum range of tandem influence.
+---------------- ------------------------------------------------------------------------
+bins_number      Type: **int**   |   Default: **200**
                      
-                 The fontsize of legend in the plot.
+                 Show the minimum length of a collinear block.
 ---------------- ------------------------------------------------------------------------
-xlabel           Type: **str**   | Default: **none**
+fontsize         Type: **float**   | Default: **9**
 
-                 The xlabel of figure.
+                 The fontsize of label in the plot.
 ---------------- ------------------------------------------------------------------------
-ylabel           Type: **str**   | Default: **none**
-
-                 The ylabel of figure.
----------------- ------------------------------------------------------------------------
-title            Type: **str**   | Default: **none**
-
-                 The title of figure.
----------------- ------------------------------------------------------------------------
-area             Type: **str**   Default: **0,3**
+area             Type: **str**   Default: **-1,3**
                      
                  Show the range of ks.
----------------- ------------------------------------------------------------------------
-shadow           Type: **bool**   Default: **true**
-                     
-                 Whether or not the plotted curve is shown with shadows.
 ---------------- ------------------------------------------------------------------------
 figsize          Type: **int,int** |  Default: **10,10**
 
@@ -52,30 +44,28 @@ savefig          Type: {\*. **png**,\*. **pdf**, \*. **svg**}  |  Default: \*. *
                  Save pictures support png, pdf, svg formats.
 ================ ========================================================================
 
-Use command to enter the folder ``wgdi -kf ? >> total.conf`` Take out the parameter file.
+.. rubric:: Parameters
 
-.. code-block:: python
+Use command to enter the folder ``wgdi -pf ? >> total.conf`` Take out the parameter file.
 
-    [ksfigure]
-    ksfit = ksfit result(*.csv)
-    labelfontsize = 15
-    legendfontsize = 15
-    xlabel = none
-    ylabel = none
-    title = none
-    area = 0,2
-    figsize = 10,6.18
-    shadow = (true/false)
-    savefig =  save image
+   [peaksfit]
+   blockinfo = block information
+   mode = median
+   bins_number = 200
+   ks_area = 0,10
+   fontsize = 9
+   area = 0,3
+   figsize = 10,6.18
+   savefig = saving image
 
 .. rubric:: Quick start
 
-After the parameters are modified properly, then run ``wgdi -kf total.conf`` 
+After the parameters are modified properly, then run ``wgdi -pf total.conf`` 
 
 
 .. rubric:: Example
 
 The original results are easily accessible at `wgdi-example <https://github.com/SunPengChuan/wgdi-example>`_
 
-.. image :: _static/all_ks.svg
+.. image :: _static/vvi161s_vvi161s.kspeaks.fit.png
    :align: left

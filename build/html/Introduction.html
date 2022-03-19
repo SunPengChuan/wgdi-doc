@@ -1,0 +1,310 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Introduction &mdash; WGDI latest documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="Installation.html" />
+    <link rel="prev" title="Welcome to WGDI’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> WGDI
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.4
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">WGDI</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Introduction</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Introduction.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<img alt="_images/workflow.svg" src="_images/workflow.svg" /><p>The WGDI workﬂow consists of three main parts: <strong>(1)</strong> Polyploidy inference using Dotplot, Collinearity extraction, Ks distributions
+<strong>(2)</strong> Hierarchical inference of genomic homology resulted from recursive paleopolyploidizations.
+<strong>(3)</strong> Subgenomic and ancestral genome reconstruction and other evolutionary scenarios.</p>
+<p>WGDI contains multiple subroutines, the user only needs to modify the configuration file simply, and then enter the name of the subroutine to be executed,
+Such as <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-d</span> <span class="pre">your.conf</span></code>.  In the following, we will describe in detail the subroutines of WGDI software.</p>
+<p><strong>WGDI subroutine and function</strong></p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 21%" />
+<col style="width: 72%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" colspan="2"><p>Parameters</p></th>
+<th class="head"><p>Functions</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>-h</p></td>
+<td><p>Help</p></td>
+<td><p>Show help message and exit</p></td>
+</tr>
+<tr class="row-odd"><td><p>-v</p></td>
+<td><p>Version</p></td>
+<td><p>Show program’s version number</p></td>
+</tr>
+<tr class="row-even"><td><p>-d</p></td>
+<td><p>DotPlot</p></td>
+<td><p>Show homologous gene dotplot</p></td>
+</tr>
+<tr class="row-odd"><td><p>-icl</p></td>
+<td><p>Collinearity</p></td>
+<td><p>Improved version of ColinearScan</p></td>
+</tr>
+<tr class="row-even"><td><p>-ks</p></td>
+<td><p>CalKs</p></td>
+<td><p>Calculate Ka/Ks for homologous gene pairs by YN00</p></td>
+</tr>
+<tr class="row-odd"><td><p>-bi</p></td>
+<td><p>BlockInfo</p></td>
+<td><p>Collinearity and Ks speculate whole genome duplication</p></td>
+</tr>
+<tr class="row-even"><td><p>-c</p></td>
+<td><p>Correspondence</p></td>
+<td><p>Extract event-related genomic alignment</p></td>
+</tr>
+<tr class="row-odd"><td><p>-bk</p></td>
+<td><p>BlockKs</p></td>
+<td><p>Show Ks of blocks in a dotplot</p></td>
+</tr>
+<tr class="row-even"><td><p>-kp</p></td>
+<td><p>KsPeaks</p></td>
+<td><p>A simple way to get ks peaks</p></td>
+</tr>
+<tr class="row-odd"><td><p>-pf</p></td>
+<td><p>PeaksFit</p></td>
+<td><p>Gaussian fitting of ks distribution</p></td>
+</tr>
+<tr class="row-even"><td><p>-pc</p></td>
+<td><p>polyploidy_classification</p></td>
+<td><p>Show event-related genomic alignment in a dotplot</p></td>
+</tr>
+<tr class="row-odd"><td><p>-km</p></td>
+<td><p>karotype_mapping</p></td>
+<td><p>Mapping from the known karyotype result to this species</p></td>
+</tr>
+<tr class="row-even"><td><p>-k</p></td>
+<td><p>karotype</p></td>
+<td><p>Show genome evolution from reconstructed ancestors</p></td>
+</tr>
+<tr class="row-odd"><td><p>-a</p></td>
+<td><p>Alignment</p></td>
+<td><p>Alignment of hierarchical and event-related gene collinearity</p></td>
+</tr>
+<tr class="row-even"><td><p>-at</p></td>
+<td><p>AlignmentTrees</p></td>
+<td><p>Phylogenetic trees constructed by collinear genes</p></td>
+</tr>
+<tr class="row-odd"><td><p>-p</p></td>
+<td><p>P-index</p></td>
+<td><p>Polyploidy-index characterize the degree of divergence among subgenomes of a polyploidy</p></td>
+</tr>
+<tr class="row-even"><td><p>-r</p></td>
+<td><p>Retain</p></td>
+<td><p>Show subgenomes in gene retention or genome fractionation</p></td>
+</tr>
+<tr class="row-odd"><td><p>-ci</p></td>
+<td><p>Circos</p></td>
+<td><p>A simple way to run circos</p></td>
+</tr>
+<tr class="row-even"><td><p>-conf</p></td>
+<td><p>Configure</p></td>
+<td><p>Display and modify the environment variable</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="Installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to WGDI’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, PengChuan Sun.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
