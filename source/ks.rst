@@ -18,7 +18,7 @@ pep_file         Type: **file**   |  Default:  **-**
 ---------------- ------------------------------------------------------------------------
 align_software   Type:{ **muscle**, **mafft** }  |   Default: **muscle**
 
-                 Multi-sequence comparison software.
+                 Software of multiple sequence alignment.
 ---------------- ------------------------------------------------------------------------
 pairs_file       Type: **file**   |  Default: **-**
 

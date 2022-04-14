@@ -10,7 +10,6 @@
 	.st4{fill:#FFFFFF;}
 	.st5{font-family:'Arial-BoldMT';}
 	.st6{font-size:24px;}
-	.st7{enable-background:new    ;}
 </style>
 <path class="st0" d="M133.3,214.1h61"/>
 <circle class="st1" cx="200.3" cy="214.1" r="6"/>
@@ -92,22 +91,26 @@
 <text transform="matrix(1 0 0 1 781.0691 307.112)" class="st5 st6">-c</text>
 <text transform="matrix(1 0 0 1 1168.8517 349.7642)" class="st5 st6">-r</text>
 <text transform="matrix(1 0 0 1 1123.4604 418.6338)" class="st4 st5 st6">retain</text>
-<text transform="matrix(1 0 0 1 673.8517 168.5903)" class="st4 st5 st6">retain</text>
+<text transform="matrix(1 0 0 1 664.8511 168.5903)" class="st4 st5 st6">ks peaks</text>
 <text transform="matrix(1 0 0 1 403.8517 222.5903)" class="st4 st5 st6">collinearity</text>
 <text transform="matrix(1 0 0 1 239.5039 222.5903)" class="st4 st5 st6">blast</text>
 <text transform="matrix(1 0 0 1 225.4169 361.1118)" class="st4 st5 st6">dotplot</text>
 <text transform="matrix(1 0 0 1 456.6778 361.112)" class="st4 st5 st6">ks</text>
-<text transform="matrix(1 0 0 1 26.6883 204.9818)" class="st7"><tspan x="0" y="0" class="st4 st5 st6">genome</tspan><tspan x="22.3" y="28.8" class="st4 st5 st6">data</tspan></text>
+<text transform="matrix(1 0 0 1 26.6883 204.9818)" class="st4 st5 st6">genome</text>
+<text transform="matrix(1 0 0 1 48.9883 233.7818)" class="st4 st5 st6">data</text>
 <text transform="matrix(1 0 0 1 656.243 417.0686)" class="st4 st5 st6">ks dotplot</text>
 <text transform="matrix(1 0 0 1 655.5906 287.9381)" class="st4 st5 st6">blockinfo</text>
-<text transform="matrix(1 0 0 1 884.243 276.1989)" class="st7"><tspan x="0" y="0" class="st4 st5 st6">polyploidy</tspan><tspan x="-16" y="28.8" class="st4 st5 st6">classification</tspan></text>
+<text transform="matrix(1 0 0 1 884.243 276.1989)" class="st4 st5 st6">polyploidy</text>
+<text transform="matrix(1 0 0 1 868.243 304.9989)" class="st4 st5 st6">classification</text>
 <text transform="matrix(1 0 0 1 1119.2864 169.9811)" class="st4 st5 st6">pindex</text>
-<text transform="matrix(1 0 0 1 881.7855 154.329)" class="st7"><tspan x="0" y="0" class="st4 st5 st6">karyotype</tspan><tspan x="3.9" y="28.8" class="st4 st5 st6"> mapping</tspan></text>
+<text transform="matrix(1 0 0 1 881.7855 154.329)" class="st4 st5 st6">karyotype</text>
+<text transform="matrix(1 0 0 1 885.6855 183.129)" class="st4 st5 st6"> mapping</text>
 <text transform="matrix(1 0 0 1 882.2205 41.5459)" class="st4 st5 st6">karyotype</text>
 <text transform="matrix(1 0 0 1 464.814 41.5459)" class="st4 st5 st6">ks figure</text>
 <text transform="matrix(1 0 0 1 663.2737 41.5458)" class="st4 st5 st6">peaks fit</text>
 <text transform="matrix(1 0 0 1 1282.0691 169.9809)" class="st4 st5 st6">circos</text>
-<text transform="matrix(1 0 0 1 1265.0493 400.8947)" class="st7"><tspan x="0" y="0" class="st4 st5 st6">alignment</tspan><tspan x="34.7" y="28.8" class="st4 st5 st6">tree</tspan></text>
+<text transform="matrix(1 0 0 1 1265.0493 400.8947)" class="st4 st5 st6">alignment</text>
+<text transform="matrix(1 0 0 1 1299.7493 429.6947)" class="st4 st5 st6">tree</text>
 <text transform="matrix(1 0 0 1 1103.3103 286.6338)" class="st4 st5 st6">alignment</text>
 <text transform="matrix(1 0 0 1 1166.5039 238.2424)" class="st5 st6">-p</text>
 <text transform="matrix(1 0 0 1 1040.2429 272.1554)" class="st5 st6">-a</text>

@@ -1,5 +1,6 @@
 {
     "restructuredtext.linter.disabled": true,
     "restructuredtext.confPath": "",
-    "esbonio.server.enabled": true
+    "esbonio.server.enabled": true,
+    "esbonio.sphinx.confDir": ""
 }

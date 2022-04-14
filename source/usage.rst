@@ -18,6 +18,7 @@ We support the use of **WGDI** to complete the work on the icon number.
    karyotype_mapping
    karyotype
    alignment
+   alignment_tree
    retain
    pindex
    circos
