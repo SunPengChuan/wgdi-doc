@@ -15,6 +15,8 @@ We support the use of **WGDI** to complete the work on the icon number.
    peaksfit
    ksfigure
    polyploidy_classification
+   ancestral_karyotype
+   ancestral_karyotype_repertoire
    karyotype_mapping
    karyotype
    alignment
@@ -64,6 +66,21 @@ Column    Information Explanation
 *  blast
 
 The protein-coding genes from each genome were compared against itself and other genomes using `BLASTP <ftp://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST/>`_  (e-value < 10-5, and outfmt = 6) or other similar protein sequence searching software ( `MMseqs2 <https://github.com/soedinglab/MMseqs2>`_ , `DIAMOND <https://github.com/bbuchfink/diamond>`_ ).
+
+* ancestor file
+
+Required documents for karyotype evolution analysis
+
+.. tabularcolumns:: column spec
+
+========= =========== =============================================================
+Column    Information Explanation                   
+1         Chr         Chromosome number
+2         Start       Homologous regions of these protochromosomes in this genome
+3         End         Homologous regions of these protochromosomes in this genome
+4         Color       These protochromosomes with different colors
+5         Subgenomes  Subgenomes according to protochromosomes
+========= =========== =============================================================
 
 **Tips**
 

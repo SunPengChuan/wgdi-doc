@@ -102,6 +102,8 @@
 <li class="toctree-l2"><a class="reference internal" href="peaksfit.html">PeaksFit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ksfigure.html">KsFigure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polyploidy_classification.html">Polyploid classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ancestral_karyotype.html">ancestral_karyotype</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ancestral_karyotype_repertoire.html">ancestral_karyotype_repertoire</a></li>
 <li class="toctree-l2"><a class="reference internal" href="karyotype_mapping.html">karyotype_mapping</a></li>
 <li class="toctree-l2"><a class="reference internal" href="karyotype.html">Karyotype</a></li>
 <li class="toctree-l2"><a class="reference internal" href="alignment.html">Alignment</a></li>
@@ -193,6 +195,8 @@
 <li class="toctree-l1"><a class="reference internal" href="peaksfit.html">PeaksFit</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ksfigure.html">KsFigure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="polyploidy_classification.html">Polyploid classification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ancestral_karyotype.html">ancestral_karyotype</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ancestral_karyotype_repertoire.html">ancestral_karyotype_repertoire</a></li>
 <li class="toctree-l1"><a class="reference internal" href="karyotype_mapping.html">karyotype_mapping</a></li>
 <li class="toctree-l1"><a class="reference internal" href="karyotype.html">Karyotype</a></li>
 <li class="toctree-l1"><a class="reference internal" href="alignment.html">Alignment</a></li>
@@ -287,6 +291,43 @@ We will no longer explain these in this documentation.</p>
 <li><p>blast</p></li>
 </ul>
 <p>The protein-coding genes from each genome were compared against itself and other genomes using <a class="reference external" href="ftp://ftp.ncbi.nlm.nih.gov/blast/executables/LATEST/">BLASTP</a>  (e-value &lt; 10-5, and outfmt = 6) or other similar protein sequence searching software ( <a class="reference external" href="https://github.com/soedinglab/MMseqs2">MMseqs2</a> , <a class="reference external" href="https://github.com/bbuchfink/diamond">DIAMOND</a> ).</p>
+<ul class="simple">
+<li><p>ancestor file</p></li>
+</ul>
+<p>Required documents for karyotype evolution analysis</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 14%" />
+<col style="width: 75%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Column</p></td>
+<td><p>Information</p></td>
+<td><p>Explanation</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Chr</p></td>
+<td><p>Chromosome number</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Start</p></td>
+<td><p>Homologous regions of these protochromosomes in this genome</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>End</p></td>
+<td><p>Homologous regions of these protochromosomes in this genome</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Color</p></td>
+<td><p>These protochromosomes with different colors</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Subgenomes</p></td>
+<td><p>Subgenomes according to protochromosomes</p></td>
+</tr>
+</tbody>
+</table>
 <p><strong>Tips</strong></p>
 <ul class="simple">
 <li><p>You can use <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-conf</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">total.conf</span></code> generates a <strong>total.conf</strong> file with all parameters, and when you modify the parameters and run WGDI, WGDI will only read the parameters corresponding to the total.conf file to execute your command.</p></li>

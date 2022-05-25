@@ -24,7 +24,7 @@ position          Type: {**order**, **start** , **end** }  |  Default: **order**
 ----------------- ------------------------------------------------------------------------
 blockinfo_reverse Type: **bool**   |    Default: **false**
 
-                  The first two columns of the blast result swap positions.
+                  The two species aligned swap positions..
 ----------------- ------------------------------------------------------------------------
 figsize           Type: **int,int** |  Default: **10,10**
 

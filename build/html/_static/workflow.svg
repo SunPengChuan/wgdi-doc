@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 24.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1411.1 456" style="enable-background:new 0 0 1411.1 456;" xml:space="preserve">
+	 viewBox="0 0 1411.1 675.9" style="enable-background:new 0 0 1411.1 675.9;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#4D4D4D;stroke-width:4;stroke-miterlimit:10;}
 	.st1{fill:#4D4D4D;stroke:#4D4D4D;stroke-width:4;}
@@ -10,10 +10,15 @@
 	.st4{fill:#FFFFFF;}
 	.st5{font-family:'Arial-BoldMT';}
 	.st6{font-size:24px;}
+	.st7{font-size:28.6254px;}
+	.st8{enable-background:new    ;}
 </style>
+<path class="st0" d="M940.4,332.4v224.9"/>
 <path class="st0" d="M133.3,214.1h61"/>
 <circle class="st1" cx="200.3" cy="214.1" r="6"/>
 <path class="st2" d="M23.3,183.6h102c5,0,9,4,9,9v42c0,5-4,9-9,9h-102c-5,0-9-4-9-9v-42C14.3,187.6,18.3,183.6,23.3,183.6z"/>
+<path class="st2" d="M45.4,544.9h250.5c12.3,0,22.1,7.7,22.1,17.4v81c0,9.6-9.8,17.4-22.1,17.4H45.4c-12.3,0-22.1-7.7-22.1-17.4v-81
+	C23.3,552.6,33.1,544.9,45.4,544.9z"/>
 <path class="st0" d="M272.8,233.6v74"/>
 <circle class="st1" cx="272.8" cy="313.6" r="6"/>
 <path class="st2" d="M221.8,183.6h102c5,0,9,4,9,9v42c0,5-4,9-9,9h-102c-5,0-9-4-9-9v-42C212.8,187.6,216.8,183.6,221.8,183.6z"/>
@@ -26,7 +31,11 @@
 <path class="st0" d="M713.3,311.1v66"/>
 <circle class="st1" cx="713.3" cy="369.1" r="6"/>
 <path class="st0" d="M773.3,281.1h74"/>
+<path class="st0" d="M342,630.6h56.1"/>
+<path class="st0" d="M811.5,555.5h130.2"/>
 <circle class="st1" cx="853.3" cy="281.1" r="6"/>
+<circle class="st1" cx="400.6" cy="630.4" r="6"/>
+<circle class="st1" cx="648.9" cy="560.8" r="6"/>
 <path class="st0" d="M713.3,251.1v-52"/>
 <circle class="st1" cx="713.3" cy="205.1" r="6"/>
 <path class="st0" d="M937.1,248v-52"/>
@@ -61,6 +70,8 @@
 <path class="st0" d="M333.3,214.1l54.8-0.4"/>
 <circle class="st1" cx="394.8" cy="213.6" r="6"/>
 <path class="st0" d="M493.3,353.1v-1c0-0.7,3.3-1,10-1h70c6.7,0,10-3.3,10-10v-50c0-6.7,3.3-10,10-10h44"/>
+<path class="st0" d="M529.3,492.2h46.2c7.2,0,10.8,3.3,10.8,10v48c0,6.7,3.5,10,10.8,10h47.3"/>
+<path class="st0" d="M539.8,632.2v-1c0-0.7,1.7-1,5.2-1h36.3c3.5,0,5.2-3.3,5.2-10v-50c0-6.7,1.7-10,5.2-10h22.8"/>
 <circle class="st1" cx="643.3" cy="281.1" r="6"/>
 <path class="st2" d="M419.8,323.6h102c5,0,9,4,9,9v42c0,5-4,9-9,9h-102c-5,0-9-4-9-9v-42C410.8,327.6,414.8,323.6,419.8,323.6z"/>
 <path class="st0" d="M777.7,290.4c5.5-6.7,15-8.6,22.7-4.4c7.6,4,10.9,13.1,7.6,21c-3.5,7.9-12.2,12.2-20.6,10.1
@@ -77,43 +88,65 @@
 <path class="st3" d="M465.3,6.2h102c5,0,9,4,9,9v42c0,5-4,9-9,9h-102c-5,0-9-4-9-9v-42C456.3,10.2,460.3,6.2,465.3,6.2z"/>
 <path class="st0" d="M591.5,37.8h60"/>
 <circle class="st1" cx="589.5" cy="38.9" r="6"/>
-<text transform="matrix(1 0 0 1 945.8082 110.286)" class="st5 st6">-k</text>
-<text transform="matrix(1 0 0 1 718.3299 113.9382)" class="st5 st6">-pf</text>
-<text transform="matrix(1 0 0 1 607.9821 30.1991)" class="st5 st6">-kf</text>
-<text transform="matrix(1 0 0 1 597.0255 275.9382)" class="st5 st6">-bi</text>
+<text transform="matrix(1 0 0 1 945.8083 110.286)" class="st5 st6">-k</text>
+<text transform="matrix(1 0 0 1 718.3301 113.9381)" class="st5 st6">-pf</text>
+<text transform="matrix(1 0 0 1 607.9822 30.1992)" class="st5 st6">-kf</text>
+<text transform="matrix(1 0 0 1 597.0256 275.9381)" class="st5 st6">-bi</text>
 <text transform="matrix(1 0 0 1 477.2864 282.9817)" class="st5 st6">-ks</text>
-<text transform="matrix(1 0 0 1 282.4168 286.5034)" class="st5 st6">-d</text>
+<text transform="matrix(1 0 0 1 282.4168 286.5033)" class="st5 st6">-d</text>
 <text transform="matrix(1 0 0 1 345.8082 201.9817)" class="st5 st6">-icl</text>
-<text transform="matrix(1 0 0 1 719.8951 347.1556)" class="st5 st6">-bk</text>
-<text transform="matrix(1 0 0 1 944.6343 235.8946)" class="st5 st6">-km</text>
-<text transform="matrix(1 0 0 1 719.243 238.2424)" class="st5 st6">-kp</text>
-<text transform="matrix(1 0 0 1 788.1125 271.112)" class="st5 st6">-pc</text>
-<text transform="matrix(1 0 0 1 781.0691 307.112)" class="st5 st6">-c</text>
-<text transform="matrix(1 0 0 1 1168.8517 349.7642)" class="st5 st6">-r</text>
-<text transform="matrix(1 0 0 1 1123.4604 418.6338)" class="st4 st5 st6">retain</text>
-<text transform="matrix(1 0 0 1 664.8511 168.5903)" class="st4 st5 st6">ks peaks</text>
+<text transform="matrix(1 0 0 1 719.8953 347.1556)" class="st5 st6">-bk</text>
+<text transform="matrix(1 0 0 1 944.6344 235.8946)" class="st5 st6">-km</text>
+<text transform="matrix(1 0 0 1 719.2432 238.2424)" class="st5 st6">-kp</text>
+<text transform="matrix(1 0 0 1 788.1127 271.112)" class="st5 st6">-pc</text>
+<text transform="matrix(1 0 0 1 781.0693 307.112)" class="st5 st6">-c</text>
+<path class="st0" d="M529,503.9c5.5-6.7,15-8.6,22.7-4.4c7.6,4,10.9,13.1,7.6,21c-3.5,7.9-12.2,12.2-20.6,10.1
+	c-8.4-1.9-14.1-9.7-13.3-18.3 M537.8,503.9H529l2.6-9.3"/>
+<text transform="matrix(1 0 0 1 532.3877 520.699)" class="st5 st7">-c</text>
+<text transform="matrix(1 0 0 1 1168.8513 349.7642)" class="st5 st6">-r</text>
+<circle class="st1" cx="940.4" cy="327.8" r="6"/>
+<text transform="matrix(1 0 0 1 351.4694 618.8038)" class="st5 st6">-ak</text>
+<text transform="matrix(0.7828 0 0 1 600.3395 548.3693)" class="st5 st6">-akr</text>
+<text transform="matrix(1 0 0 1 1123.4602 418.6338)" class="st4 st5 st6">retain</text>
+<text transform="matrix(1 0 0 1 664.8512 168.5903)" class="st4 st5 st6">ks peaks</text>
 <text transform="matrix(1 0 0 1 403.8517 222.5903)" class="st4 st5 st6">collinearity</text>
 <text transform="matrix(1 0 0 1 239.5039 222.5903)" class="st4 st5 st6">blast</text>
 <text transform="matrix(1 0 0 1 225.4169 361.1118)" class="st4 st5 st6">dotplot</text>
 <text transform="matrix(1 0 0 1 456.6778 361.112)" class="st4 st5 st6">ks</text>
-<text transform="matrix(1 0 0 1 26.6883 204.9818)" class="st4 st5 st6">genome</text>
-<text transform="matrix(1 0 0 1 48.9883 233.7818)" class="st4 st5 st6">data</text>
-<text transform="matrix(1 0 0 1 656.243 417.0686)" class="st4 st5 st6">ks dotplot</text>
-<text transform="matrix(1 0 0 1 655.5906 287.9381)" class="st4 st5 st6">blockinfo</text>
-<text transform="matrix(1 0 0 1 884.243 276.1989)" class="st4 st5 st6">polyploidy</text>
-<text transform="matrix(1 0 0 1 868.243 304.9989)" class="st4 st5 st6">classification</text>
-<text transform="matrix(1 0 0 1 1119.2864 169.9811)" class="st4 st5 st6">pindex</text>
-<text transform="matrix(1 0 0 1 881.7855 154.329)" class="st4 st5 st6">karyotype</text>
-<text transform="matrix(1 0 0 1 885.6855 183.129)" class="st4 st5 st6"> mapping</text>
-<text transform="matrix(1 0 0 1 882.2205 41.5459)" class="st4 st5 st6">karyotype</text>
+<text transform="matrix(1 0 0 1 26.6884 204.9818)" class="st4 st5 st6">genome</text>
+<text transform="matrix(1 0 0 1 48.9884 233.7818)" class="st4 st5 st6">data</text>
+<text transform="matrix(1 0 0 1 67.9393 581.7821)" class="st8"><tspan x="0" y="0" class="st4 st5 st6">Intactly preserved </tspan><tspan x="-35.3" y="28.8" class="st4 st5 st6">ancestral chromosomes </tspan><tspan x="-1.3" y="57.6" class="st4 st5 st6">in multiple species</tspan></text>
+<text transform="matrix(1 0 0 1 656.2431 417.0686)" class="st4 st5 st6">ks dotplot</text>
+<g>
+	<path class="st3" d="M422,600.6h108.2c5.3,0,9.5,4,9.5,9v42c0,5-4.2,9-9.5,9H422c-5.3,0-9.5-4-9.5-9v-42
+		C412.4,604.6,416.7,600.6,422,600.6z"/>
+	<text transform="matrix(1 0 0 1 421.2957 623.0214)" class="st4 st5 st6">ancestral</text>
+	<text transform="matrix(1 0 0 1 421.2957 651.8214)" class="st4 st5 st6">karyotype</text>
+</g>
+<g>
+	<path class="st3" d="M681.3,508.7h113.8c5.6,0,10,6.5,10,14.7v68.5c0,8.2-4.5,14.7-10,14.7H681.3c-5.6,0-10-6.5-10-14.7v-68.5
+		C671.2,515.2,675.7,508.7,681.3,508.7z"/>
+	<text transform="matrix(1 0 0 1 680.083 531.0649)" class="st4 st5 st6">ancestral</text>
+	<text transform="matrix(1 0 0 1 680.083 559.8649)" class="st4 st5 st6">karyotype</text>
+	<text transform="matrix(1 0 0 1 680.083 588.6649)" class="st4 st5 st6">repertoire</text>
+</g>
+<text transform="matrix(1 0 0 1 655.5907 287.9381)" class="st4 st5 st6">blockinfo</text>
+<path class="st2" d="M417.9,459.7h102c5,0,9,4,9,9v42c0,5-4,9-9,9h-102c-5,0-9-4-9-9v-42C408.9,463.7,412.9,459.7,417.9,459.7z"/>
+<text transform="matrix(1 0 0 1 413.2134 496.5866)" class="st4 st5 st6">blockinfo</text>
+<text transform="matrix(1 0 0 1 884.2432 276.1989)" class="st4 st5 st6">polyploidy</text>
+<text transform="matrix(1 0 0 1 868.2433 304.9989)" class="st4 st5 st6">classification</text>
+<text transform="matrix(1 0 0 1 1119.2861 169.9811)" class="st4 st5 st6">pindex</text>
+<text transform="matrix(1 0 0 1 881.7858 154.329)" class="st4 st5 st6">karyotype</text>
+<text transform="matrix(1 0 0 1 885.6857 183.129)" class="st4 st5 st6"> mapping</text>
+<text transform="matrix(1 0 0 1 882.2208 41.5459)" class="st4 st5 st6">karyotype</text>
 <text transform="matrix(1 0 0 1 464.814 41.5459)" class="st4 st5 st6">ks figure</text>
-<text transform="matrix(1 0 0 1 663.2737 41.5458)" class="st4 st5 st6">peaks fit</text>
-<text transform="matrix(1 0 0 1 1282.0691 169.9809)" class="st4 st5 st6">circos</text>
-<text transform="matrix(1 0 0 1 1265.0493 400.8947)" class="st4 st5 st6">alignment</text>
-<text transform="matrix(1 0 0 1 1299.7493 429.6947)" class="st4 st5 st6">tree</text>
-<text transform="matrix(1 0 0 1 1103.3103 286.6338)" class="st4 st5 st6">alignment</text>
-<text transform="matrix(1 0 0 1 1166.5039 238.2424)" class="st5 st6">-p</text>
+<text transform="matrix(1 0 0 1 663.2738 41.5458)" class="st4 st5 st6">peaks fit</text>
+<text transform="matrix(1 0 0 1 1282.0686 169.9809)" class="st4 st5 st6">circos</text>
+<text transform="matrix(1 0 0 1 1265.0488 400.8947)" class="st4 st5 st6">alignment</text>
+<text transform="matrix(1 0 0 1 1299.7488 429.6947)" class="st4 st5 st6">tree</text>
+<text transform="matrix(1 0 0 1 1103.3101 286.6338)" class="st4 st5 st6">alignment</text>
+<text transform="matrix(1 0 0 1 1166.5035 238.2424)" class="st5 st6">-p</text>
 <text transform="matrix(1 0 0 1 1040.2429 272.1554)" class="st5 st6">-a</text>
-<text transform="matrix(1 0 0 1 1334.3734 354.4598)" class="st5 st6">-at</text>
-<text transform="matrix(1 0 0 1 1336.7212 235.8946)" class="st5 st6">-ci</text>
+<text transform="matrix(1 0 0 1 1334.3729 354.4598)" class="st5 st6">-at</text>
+<text transform="matrix(1 0 0 1 1336.7207 235.8946)" class="st5 st6">-ci</text>
 </svg>

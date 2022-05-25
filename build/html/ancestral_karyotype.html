@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>KsPeaks &mdash; WGDI latest documentation</title>
+  <title>ancestral_karyotype &mdash; WGDI latest documentation</title>
   
 
   
@@ -38,8 +38,8 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="PeaksFit" href="peaksfit.html" />
-    <link rel="prev" title="BlockKs" href="blockks.html" /> 
+    <link rel="next" title="ancestral_karyotype_repertoire" href="ancestral_karyotype_repertoire.html" />
+    <link rel="prev" title="Polyploid classification" href="polyploidy_classification.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -98,11 +98,11 @@
 <li class="toctree-l2"><a class="reference internal" href="blockinfo.html">BlockInfo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="correspondence.html">Correspondence</a></li>
 <li class="toctree-l2"><a class="reference internal" href="blockks.html">BlockKs</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">KsPeaks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kspeaks.html">KsPeaks</a></li>
 <li class="toctree-l2"><a class="reference internal" href="peaksfit.html">PeaksFit</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ksfigure.html">KsFigure</a></li>
 <li class="toctree-l2"><a class="reference internal" href="polyploidy_classification.html">Polyploid classification</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ancestral_karyotype.html">ancestral_karyotype</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">ancestral_karyotype</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ancestral_karyotype_repertoire.html">ancestral_karyotype_repertoire</a></li>
 <li class="toctree-l2"><a class="reference internal" href="karyotype_mapping.html">karyotype_mapping</a></li>
 <li class="toctree-l2"><a class="reference internal" href="karyotype.html">Karyotype</a></li>
@@ -163,13 +163,13 @@
         
           <li><a href="usage.html">Usage</a> &raquo;</li>
         
-      <li>KsPeaks</li>
+      <li>ancestral_karyotype</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/kspeaks.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/ancestral_karyotype.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -182,103 +182,74 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="kspeaks">
-<h1>KsPeaks<a class="headerlink" href="#kspeaks" title="Permalink to this headline">¶</a></h1>
-<p>kspeaks is a simple way to get ks peaks.</p>
+  <div class="section" id="ancestral-karyotype">
+<h1>ancestral_karyotype<a class="headerlink" href="#ancestral-karyotype" title="Permalink to this headline">¶</a></h1>
+<p>Generation of ancestral karyotypes from chromosomes that retain the same structure in modern species.</p>
+<p class="rubric">Parameters</p>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 12%" />
-<col style="width: 88%" />
+<col style="width: 26%" />
+<col style="width: 74%" />
 </colgroup>
 <tbody>
 <tr class="row-odd"><td><p>Parameters</p></td>
 <td><p>Standards and instructions</p></td>
 </tr>
-<tr class="row-even"><td><p>blockinfo</p></td>
+<tr class="row-even"><td><p>gff</p></td>
+<td><p>Type: <strong>file</strong>  |      Default: <strong>-</strong></p>
+<p>Cat the relevant ‘gff’ files into a file.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>pep_file</p></td>
+<td><p>Type: <strong>file</strong>    |     Default: <strong>none</strong></p>
+<p>Cat the relevant ‘pep.fa’ files into a file.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>ancestor</p></td>
+<td><p>Type: <strong>file</strong>  |  Default: <strong>none</strong></p>
+<p>This file requires you to provide.</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p>mark</p></td>
+<td><p>Type: <strong>str</strong>  |  Default: <strong>aak</strong></p>
+<p>A shorthand for ancestral karyotype.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>ancestor_gff</p></td>
+<td><p>Type: <strong>file</strong>  |  Default: <strong>none</strong>
+Gff file of the created ancestral karyotype.</p></td>
+</tr>
+<tr class="row-odd"><td><p>ancestor_lens</p></td>
+<td><p>Type: <strong>file</strong>  |  Default: <strong>none</strong></p>
+<p>Lens file of the created ancestral karyotype.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>ancestor_pep</p></td>
 <td><p>Type: <strong>file</strong>  |    Default: <strong>-</strong></p>
-<p>Output result of parameter <cite>bi</cite></p>
+<p>Pep file of the created ancestral karyotype.</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p>pvalue</p></td>
-<td><p>Type: <strong>float</strong>  |    Default: <strong>0.05</strong></p>
-<p>Evaluate the compactness and uniqueness of collinear blocks, the range is 0-1, the better collinearity range is 0-0.2.</p>
-</td>
-</tr>
-<tr class="row-even"><td><p>tandem</p></td>
-<td><p>Type:str   |   Default: true</p>
-<p>The criterion is that there are no more than 200 genes with a difference in genetic location.</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p>block_length</p></td>
-<td><p>Type: <strong>int</strong>   |   Default: <strong>5</strong></p>
-<p>Minimum length of collinear blocks.</p>
-</td>
-</tr>
-<tr class="row-even"><td><p>ks_area</p></td>
-<td><p>Type: <strong>str</strong>  |   Default: <strong>0,10</strong></p>
-<p>Show the range of ks.</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p>multiple</p></td>
-<td><p>Type: <strong>int</strong>   |    Default: <strong>1</strong></p>
-<p>The best number of homologous genes shown with red dots.</p>
-</td>
-</tr>
-<tr class="row-even"><td><p>homo</p></td>
-<td><p>Type: <strong>int [1-5]</strong>   Default: <strong>1</strong></p>
-<p>Evaluate the ratio of the best homologous gene pairs of collinearity block, with a range of -1, 1.</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p>fontsize</p></td>
-<td><p>Type: <strong>str</strong>      Default: <strong>9</strong></p>
-<p>The size of the font.</p>
-</td>
-</tr>
-<tr class="row-even"><td><p>area</p></td>
-<td><p>Type: <strong>str</strong>   Default: <strong>0,3</strong></p>
-<p>Show the range of ks.</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p>figsize</p></td>
-<td><p>Type: <strong>int,int</strong> |  Default: <strong>10,10</strong></p>
-<p>Control the proportion of the size of the saved picture.</p>
-</td>
-</tr>
-<tr class="row-even"><td><p>savefig</p></td>
-<td><p>Type: {*. <strong>png</strong>, *. <strong>pdf</strong>, *. <strong>svg</strong>}  |  Default: *. <strong>png</strong></p>
-<p>Save pictures support png, pdf, svg formats.</p>
-</td>
-</tr>
-<tr class="row-odd"><td><p>savefile</p></td>
-<td><p>Type: <strong>file</strong>   |  Default: * <strong>.csv</strong></p>
-<p>The resulting file.</p>
+<tr class="row-odd"><td><p>ancestor_file</p></td>
+<td><p>Type: <strong>file</strong>  |    Default: <strong>-</strong></p>
+<p>Updated the ancestral karyotype file.</p>
 </td>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Parameters</p>
-<p>Use command to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-kp</span> <span class="pre">?</span> <span class="pre">&gt;&gt;</span> <span class="pre">total.conf</span></code> Take out the parameter file.:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">kspeaks</span><span class="p">]</span>
-
- <span class="n">blockinfo</span> <span class="o">=</span> <span class="n">block</span> <span class="n">information</span>
- <span class="n">pvalue</span> <span class="o">=</span> <span class="mf">0.05</span>
- <span class="n">tandem</span> <span class="o">=</span> <span class="n">true</span>
- <span class="n">block_</span> <span class="n">length</span> <span class="o">=</span> <span class="nb">int</span> <span class="n">number</span>
- <span class="n">ks_area</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="mi">10</span>
- <span class="n">multiple</span> <span class="o">=</span> <span class="mi">1</span>
- <span class="n">homo</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="mi">1</span>
- <span class="n">fontsize</span> <span class="o">=</span> <span class="mi">9</span>
- <span class="n">area</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="mi">3</span>
- <span class="n">figsize</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span><span class="mf">6.18</span>
- <span class="n">savefig</span> <span class="o">=</span> <span class="n">saving</span> <span class="n">image</span>
- <span class="n">savefile</span> <span class="o">=</span> <span class="n">ks</span> <span class="n">medain</span> <span class="n">savefile</span>
+<p>Use command to enter the folder <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-ak</span> <span class="pre">?</span> <span class="pre">&gt;&gt;</span> <span class="pre">total.conf</span></code> Take out the parameter file.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">ancestral_karyotype</span><span class="p">]</span>
+<span class="n">gff</span> <span class="o">=</span> <span class="n">gff</span> <span class="n">file</span> <span class="p">(</span><span class="n">cat</span> <span class="n">the</span> <span class="n">relevant</span> <span class="s1">&#39;gff&#39;</span> <span class="n">files</span> <span class="n">into</span> <span class="n">a</span> <span class="n">file</span><span class="p">)</span>
+<span class="n">pep_file</span> <span class="o">=</span> <span class="n">pep</span> <span class="n">file</span> <span class="p">(</span><span class="n">cat</span> <span class="n">the</span> <span class="n">relevant</span> <span class="s1">&#39;pep.fa&#39;</span> <span class="n">files</span> <span class="n">into</span> <span class="n">a</span> <span class="n">file</span><span class="p">)</span>
+<span class="n">ancestor</span> <span class="o">=</span> <span class="n">ancestor</span> <span class="n">file</span>  <span class="p">(</span><span class="n">this</span> <span class="n">file</span> <span class="n">requires</span> <span class="n">you</span> <span class="n">to</span> <span class="n">provide</span><span class="p">)</span>
+<span class="n">mark</span> <span class="o">=</span> <span class="n">aak</span>
+<span class="n">ancestor_gff</span> <span class="o">=</span>  <span class="n">result</span> <span class="n">file</span>
+<span class="n">ancestor_lens</span> <span class="o">=</span>  <span class="n">result</span> <span class="n">file</span>
+<span class="n">ancestor_pep</span> <span class="o">=</span>  <span class="n">result</span> <span class="n">file</span>
+<span class="n">ancestor_file</span> <span class="o">=</span>  <span class="n">result</span> <span class="n">file</span>
 </pre></div>
 </div>
 <p class="rubric">Quick start</p>
-<p>After the parameters are modified properly, then run <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-kp</span> <span class="pre">total.conf</span></code></p>
-<p class="rubric">Example</p>
 <p>The original results are easily accessible at <a class="reference external" href="https://github.com/SunPengChuan/wgdi-example">wgdi-example</a></p>
-<img alt="_images/vvi161s_vvi161s.kspeaks.png" class="align-left" src="_images/vvi161s_vvi161s.kspeaks.png" />
 </div>
 
 
@@ -287,8 +258,8 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="peaksfit.html" class="btn btn-neutral float-right" title="PeaksFit" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="blockks.html" class="btn btn-neutral float-left" title="BlockKs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ancestral_karyotype_repertoire.html" class="btn btn-neutral float-right" title="ancestral_karyotype_repertoire" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="polyploidy_classification.html" class="btn btn-neutral float-left" title="Polyploid classification" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
