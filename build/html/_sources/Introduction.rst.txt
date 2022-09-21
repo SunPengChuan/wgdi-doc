@@ -2,7 +2,7 @@ Introduction
 ------------
 
 
-.. image :: _static/workflow.svg
+.. image :: _static/workflow.png
 
 
 The WGDI workﬂow consists of three main parts: **(1)** Polyploidy inference using Dotplot, Collinearity extraction, Ks distributions 

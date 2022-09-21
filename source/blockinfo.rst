@@ -108,7 +108,7 @@ ks_average        Type: **float**
 ----------------- ------------------------------------------------------------------------
 homo1-5           Type: **float**
 
-                  Evalue value in blast result. 
+                  The average of scores of different color dots (red=1, blue=0, gray=-1) on synteny blocks.
 ----------------- ------------------------------------------------------------------------
 block1,block2     Type: **str**
   
@@ -117,6 +117,10 @@ block1,block2     Type: **str**
 ks                Type: **str**
 
                   Output result of parameter `ks`.
+----------------- ------------------------------------------------------------------------
+tandem_ratio      Type: **float**
+
+                  The density of tandem repeats, in general, a synteny block greater than 0.5 is unreliable.
 ----------------- ------------------------------------------------------------------------
 density1,density2 Type: **float**
                      

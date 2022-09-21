@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                0.5.3
+                0.6.1
               </div>
             
           
@@ -113,6 +113,8 @@
 <li class="toctree-l2"><a class="reference internal" href="circos.html">Circos</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
 </ul>
 
             
@@ -310,7 +312,7 @@ This file contains the main information to achieve the purpose of easily screeni
 </tr>
 <tr class="row-even"><td><p>homo1-5</p></td>
 <td><p>Type: <strong>float</strong></p>
-<p>Evalue value in blast result.</p>
+<p>The average of scores of different color dots (red=1, blue=0, gray=-1) on synteny blocks.</p>
 </td>
 </tr>
 <tr class="row-odd"><td><p>block1,block2</p></td>
@@ -323,12 +325,17 @@ This file contains the main information to achieve the purpose of easily screeni
 <p>Output result of parameter <cite>ks</cite>.</p>
 </td>
 </tr>
-<tr class="row-odd"><td><p>density1,density2</p></td>
+<tr class="row-odd"><td><p>tandem_ratio</p></td>
+<td><p>Type: <strong>float</strong></p>
+<p>The density of tandem repeats, in general, a synteny block greater than 0.5 is unreliable.</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>density1,density2</p></td>
 <td><p>Type: <strong>float</strong></p>
 <p>Density of collinear blocks.</p>
 </td>
 </tr>
-<tr class="row-even"><td><p>class1,class2</p></td>
+<tr class="row-odd"><td><p>class1,class2</p></td>
 <td><p>Type: <strong>str</strong></p>
 <p>Class of collinear blocks.</p>
 </td>

@@ -1,4 +1,4 @@
-.. wgid1 documentation master file, created by
+.. wgdi documentation master file, created by
    sphinx-quickstart on Fri Oct 19 03:19:12 2018.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
@@ -20,7 +20,7 @@ The use of WGDI can produce a gene-colinearity supported and hierarchical list o
 
 WGDI also provides additional functions to help distinguish polyploid between subgenome and ancestral genome reconstruction and other evolutionary scenarios. \
 
-WGDI outperforms similar tools in terms of efficacy, flexibility, scalability. WGDI is freely available for public use at |github|_.\
+WGDI is freely available for public use at |github|_.\
 
 Table of Contents
 -----------------
@@ -31,6 +31,8 @@ Table of Contents
    Introduction
    Installation
    usage
+   examples
+   changelog
 
 Citating WGDI
 -------------

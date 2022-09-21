@@ -52,7 +52,7 @@ the_other_ancestor_file   Type: **file**   |  Default: \* **.csv**
                           The resulting file.
 ========================= ========================================================================
 
-Use command to enter the folder ``wgdi -k ? >> total.conf`` Take out the parameter file.
+Use command to enter the folder ``wgdi -km ? >> total.conf`` Take out the parameter file.
 
 .. code-block:: python
 
