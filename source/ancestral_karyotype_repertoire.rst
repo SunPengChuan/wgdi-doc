@@ -60,7 +60,7 @@ ancestor_pep_new          Type: **file**  |    Default: **-**
                           Updated the pep file of ancestral karyotype.
 ========================= ========================================================================
 
-Use command to enter the folder ``wgdi -ak ? >> total.conf`` Take out the parameter file.
+Use command to enter the folder ``wgdi -akr ? >> total.conf`` Take out the parameter file.
 
 .. code-block:: python
 
