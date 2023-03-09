@@ -1,5 +1,5 @@
-karyotype_mapping
------------------
+Shared_fusions
+--------------
 
 Quickly find shared fusions between species. 
 
