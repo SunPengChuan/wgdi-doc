@@ -10,17 +10,13 @@ Description
 -----------
 ::
 
-WGDI (Whole-Genome Duplication Integrated analysis), a python-based command-line tool that allows researchers to gain insights into \
-recursive polyploidization and doing cross-species genomics alignment analysis. \
-
-The WGDI suite provides commonly used dotplot, ks, and collinearity analysis workflows together with tools for modeling and visualization, 
-rendering these analysis accessible to genomics researchers in a convenient manner. \
-
-The use of WGDI can produce a gene-colinearity supported and hierarchical list of homologous genes, relating to specific polyploidizations and speciations. \
-
-WGDI also provides additional functions to help distinguish polyploid between subgenome and ancestral genome reconstruction and other evolutionary scenarios. \
-
-WGDI is freely available for public use at |github|_.\
+WGDI (Whole-Genome Duplication Integrated analysis), a Python-based command-line tool that facilitates 
+comprehensive analysis of recursive polyploidization events and cross-species genome alignments. 
+WGDI supports three main workflows (polyploid inference, hierarchical inference of genomic homology, 
+and ancestral chromosome karyotyping) that can improve the detection of WGD and characterization of WGD-related 
+events based on high-quality chromosome-level genomes. Significantly, it can extract complete synteny blocks and 
+facilitate reconstruction of detailed karyotype evolution. This toolkit is freely available at 
+GitHub (https://github.com/SunPengChuan/wgdi). 
 
 Table of Contents
 -----------------
@@ -41,7 +37,7 @@ If you use wgdi in your work, please cite:
 
 ::
 
-Sun P, Jiao B, Yang Y, et al. WGDI: A user-friendly toolkit for evolutionary analyses of whole-genome duplications and ancestral karyotypes[J]. bioRxiv, 2021. **doi:** https://doi.org/10.1101/2021.04.29.441969
+Sun, P., Jiao, B., Yang, Y., Shan, L., Li, T., Li, X., ... & Liu, J. (2022). WGDI: A user-friendly toolkit for evolutionary analyses of whole-genome duplications and ancestral karyotypes. Molecular plant, 15(12), 1841-1851. https://doi.org/10.1016/j.molp.2022.10.018
 
 
 Contact

@@ -30,7 +30,7 @@ diff             Type: **float** |  Default: **0.05**
 classid          Type: **str**  |    Default: **class1,class2**
 
                  The class name of the grouping according to the divided ancestral area.
----------------- ------------------------------------------------------------------------ 
+---------------- ------------------------------------------------------------------------
 savefile         Type: **file**   |  Default: \* **.csv**
                     
                  The resulting file.

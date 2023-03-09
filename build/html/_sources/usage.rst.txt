@@ -19,6 +19,7 @@ We support the use of **WGDI** to complete the work on the icon number.
    ancestral_karyotype_repertoire
    karyotype_mapping
    karyotype
+   shared_fusions
    alignment
    alignment_tree
    retain
