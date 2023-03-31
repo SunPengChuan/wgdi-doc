@@ -39,10 +39,6 @@ limit_length              Type: **int**  |    Default: **5**
       
                           Show the minimum length of blocks.
 ------------------------- ------------------------------------------------------------------------
-savefile                  Type: **file**   |  Default: \* **.csv**
-                    
-                          The resulting file.
-------------------------- ------------------------------------------------------------------------
 filtered_blockinfo        Type: **file**   |  Default: \* **.csv**
                     
                           blockinfo.csv filtered by this program.
@@ -59,8 +55,7 @@ Use command to enter the folder ``wgdi -sf ? >> total.conf`` Take out the parame
     ancestor_left = ancestor file
     ancestor_top = ancestor file
     classid = class1,class2
-    limit_length = 10
-    savefile = result file(.csv)
+    limit_length = 5
     filtered_blockinfo = result blockinfo (.csv)
 
 .. rubric:: Quick start
