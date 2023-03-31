@@ -54,7 +54,7 @@ Use command to enter the folder ``wgdi -c ? >> total.conf`` Take out the paramet
     lens2 = lens2 file
     tandem = (true/false)
     tandem_length = 200
-    pvalue = 0.05
+    pvalue = 0.2
     block_length = 5
     multiple  = 1
     homo = 0,1
