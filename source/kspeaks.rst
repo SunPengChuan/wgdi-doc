@@ -65,7 +65,7 @@ Use command to enter the folder ``wgdi -kp ? >> total.conf`` Take out the parame
   [kspeaks]
 
    blockinfo = block information
-   pvalue = 0.05
+   pvalue = 0.2
    tandem = true
    block_ length = int number
    ks_area = 0,10

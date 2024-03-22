@@ -24,7 +24,7 @@ copyright = '2021, PengChuan Sun'
 author = 'PengChuan Sun'
 
 # The short X.Y version
-version = '0.6.3'
+version = '0.6.5'
 # The full version, including alpha/beta/rc tags
 release = 'latest'
 
@@ -60,7 +60,7 @@ master_doc = 'index'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'En'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.

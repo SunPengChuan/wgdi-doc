@@ -46,9 +46,10 @@ savefig          Type: {\*. **png**,\*. **pdf**, \*. **svg**}  |  Default: \*. *
 
 .. rubric:: Parameters
 
-Use command to enter the folder ``wgdi -pf ? >> total.conf`` Take out the parameter file.
+Use command to enter the folder ``wgdi -pf ? >> total.conf`` Take out the parameter file.::
 
    [peaksfit]
+
    blockinfo = block information
    mode = median
    bins_number = 200
