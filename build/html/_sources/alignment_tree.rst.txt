@@ -56,7 +56,7 @@ model            Type: **str**  |    Default: **-**
                   
                  Merge multiple nwk-format tree files.
 ---------------- ------------------------------------------------------------------------  
-trimming         Type:{ **trimal**, **divvier**}  |   Default: **none**
+trimming         Type:{ **trimal**, **divvier**}  |   Default: **trimal**
 
                  Software of removal of spurious sequences.
 ---------------- ------------------------------------------------------------------------
