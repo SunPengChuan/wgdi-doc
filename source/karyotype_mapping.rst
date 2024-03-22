@@ -29,11 +29,11 @@ repeat_number             Type: **int**  |  Default: **10**
 ------------------------- ------------------------------------------------------------------------
 ancestor_left             Type: **file**  |  Default: **none**
 
-                          Ancestor location file (Only one of ('left', 'top') can be reserved)
+                          Ancestor location file (Only one of ('left', 'top') can be reserved in this conf file, and the other should be deleted)
 ------------------------- ------------------------------------------------------------------------  
 ancestor_top              Type: **file**  |  Default: **none**
 
-                          Ancestor location file (Only one of ('left', 'top') can be reserved)
+                          Ancestor location file (Only one of ('left', 'top') can be reserved in this conf file, and the other should be deleted)
 ------------------------- ------------------------------------------------------------------------  
 blockinfo                 Type: **file**  |    Default: **-**
                      
