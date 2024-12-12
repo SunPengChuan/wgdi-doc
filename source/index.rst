@@ -23,11 +23,11 @@ Table of Contents
 .. toctree::
    :maxdepth: 3
 
-   Introduction
-   Installation
+   introduction
+   installation
    usage
-   Examples
-   Changelog
+   examples
+   changelog
 
 Citing WGDI
 -----------
