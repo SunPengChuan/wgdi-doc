@@ -1,4 +1,4 @@
-ancestral_karyotype
+Ancestral_karyotype
 -------------------
 
 Generation of ancestral karyotypes from chromosomes that retain the same structure in modern species. 

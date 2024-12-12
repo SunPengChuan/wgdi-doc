@@ -1,7 +1,6 @@
 Installation
 ------------
 
-Python package and command line interface (IDLE) for the analysis of whole genome duplications (WGDI). 
 WGDI can be deployed in Windows, Linux, and Mac OS operating systems and can be installed via pip and conda. 
 
 **Bioconda**

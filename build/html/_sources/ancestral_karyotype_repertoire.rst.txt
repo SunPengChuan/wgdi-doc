@@ -1,4 +1,4 @@
-ancestral_karyotype_repertoire
+Ancestral_karyotype_repertoire
 ------------------------------
 
 Incorporate genes from collinearity blocks into the ancestral karyotype repertoire. 
