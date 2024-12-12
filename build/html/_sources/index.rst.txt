@@ -1,22 +1,21 @@
-.. wgdi documentation master file, created by
+.. WGDI documentation master file, created by
    sphinx-quickstart on Fri Oct 19 03:19:12 2018.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to WGDI's documentation!
+Welcome to WGDI's Documentation!
 ================================
 
 Description
 -----------
-::
 
-WGDI (Whole-Genome Duplication Integrated analysis), a Python-based command-line tool that facilitates 
-comprehensive analysis of recursive polyploidization events and cross-species genome alignments. 
-WGDI supports three main workflows (polyploid inference, hierarchical inference of genomic homology, 
-and ancestral chromosome karyotyping) that can improve the detection of WGD and characterization of WGD-related 
-events based on high-quality chromosome-level genomes. Significantly, it can extract complete synteny blocks and 
-facilitate reconstruction of detailed karyotype evolution. This toolkit is freely available at 
-GitHub (https://github.com/SunPengChuan/wgdi). 
+WGDI (Whole-Genome Duplication Integrated analysis) is a Python-based command-line tool designed to facilitate comprehensive analysis of recursive polyploidization events and cross-species genome alignments. It supports three main workflows:
+
+- Polyploid inference
+- Hierarchical inference of genomic homology
+- Ancestral chromosome karyotyping
+
+These workflows improve the detection of whole-genome duplications (WGD) and the characterization of WGD-related events based on high-quality chromosome-level genomes. Importantly, WGDI can extract complete synteny blocks and aid in the reconstruction of detailed karyotype evolution. The toolkit is freely available on GitHub: `GitHub <https://github.com/SunPengChuan/wgdi>`_.
 
 Table of Contents
 -----------------
@@ -26,29 +25,25 @@ Table of Contents
 
    Introduction
    Installation
-   usage
-   examples
-   changelog
+   Usage
+   Examples
+   Changelog
 
-Citating WGDI
--------------
+Citing WGDI
+-----------
 
-If you use wgdi in your work, please cite:
+If you use WGDI in your work, please cite the following publication:
 
-::
+.. code-block:: none
 
-Sun, P., Jiao, B., Yang, Y., Shan, L., Li, T., Li, X., ... & Liu, J. (2022). WGDI: A user-friendly toolkit for evolutionary analyses of whole-genome duplications and ancestral karyotypes. Molecular plant, 15(12), 1841-1851. https://doi.org/10.1016/j.molp.2022.10.018
-
+   Sun, P., Jiao, B., Yang, Y., Shan, L., Li, T., Li, X., ... & Liu, J. (2022). 
+   WGDI: A user-friendly toolkit for evolutionary analyses of whole-genome duplications and ancestral karyotypes. 
+   Molecular Plant, 15(12), 1841-1851. https://doi.org/10.1016/j.molp.2022.10.018
 
 Contact
 -------
 
-If you have any questions or good suggestions , send email via |author|_'s mailbox or submit changes on our |github|_.
+For any questions or suggestions, feel free to contact Pengchuan Sun via email: |author_email| or submit changes on our |github_link|.
 
-
-.. |author| replace:: Pengchuan Sun
-.. _author: sunpengchuan@gmail.com
-
-.. |github| replace:: GitHub
-.. _github: https://github.com/SunPengChuan/wgdi
-
+.. |author_email| replace:: sunpengchuan@gmail.com
+.. |github_link| replace:: GitHub repository

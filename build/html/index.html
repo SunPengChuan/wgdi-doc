@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="En" data-content_root="./">
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to WGDI’s documentation! &mdash; WGDI latest documentation</title>
+  <title>Welcome to WGDI’s Documentation! &mdash; WGDI latest documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
 
@@ -15,8 +15,8 @@
   
         <script src="_static/jquery.js?v=5d32c60e"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=2ab17cd4"></script>
-        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/documentation_options.js?v=c6e86fd7"></script>
+        <script src="_static/doctools.js?v=9bcbadda"></script>
         <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -36,7 +36,7 @@
             WGDI
           </a>
               <div class="version">
-                0.6.5
+                0.7.1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -49,9 +49,9 @@
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a></li>
 </ul>
 
         </div>
@@ -68,7 +68,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Welcome to WGDI’s documentation!</li>
+      <li class="breadcrumb-item active">Welcome to WGDI’s Documentation!</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -79,16 +79,16 @@
            <div itemprop="articleBody">
              
   <section id="welcome-to-wgdi-s-documentation">
-<h1>Welcome to WGDI’s documentation!<a class="headerlink" href="#welcome-to-wgdi-s-documentation" title="Link to this heading"></a></h1>
+<h1>Welcome to WGDI’s Documentation!<a class="headerlink" href="#welcome-to-wgdi-s-documentation" title="Link to this heading"></a></h1>
 <section id="description">
 <h2>Description<a class="headerlink" href="#description" title="Link to this heading"></a></h2>
-<p>WGDI (Whole-Genome Duplication Integrated analysis), a Python-based command-line tool that facilitates
-comprehensive analysis of recursive polyploidization events and cross-species genome alignments.
-WGDI supports three main workflows (polyploid inference, hierarchical inference of genomic homology,
-and ancestral chromosome karyotyping) that can improve the detection of WGD and characterization of WGD-related
-events based on high-quality chromosome-level genomes. Significantly, it can extract complete synteny blocks and
-facilitate reconstruction of detailed karyotype evolution. This toolkit is freely available at
-GitHub (<a class="reference external" href="https://github.com/SunPengChuan/wgdi">https://github.com/SunPengChuan/wgdi</a>).</p>
+<p>WGDI (Whole-Genome Duplication Integrated analysis) is a Python-based command-line tool designed to facilitate comprehensive analysis of recursive polyploidization events and cross-species genome alignments. It supports three main workflows:</p>
+<ul class="simple">
+<li><p>Polyploid inference</p></li>
+<li><p>Hierarchical inference of genomic homology</p></li>
+<li><p>Ancestral chromosome karyotyping</p></li>
+</ul>
+<p>These workflows improve the detection of whole-genome duplications (WGD) and the characterization of WGD-related events based on high-quality chromosome-level genomes. Importantly, WGDI can extract complete synteny blocks and aid in the reconstruction of detailed karyotype evolution. The toolkit is freely available on GitHub: <a class="reference external" href="https://github.com/SunPengChuan/wgdi">GitHub</a>.</p>
 </section>
 <section id="table-of-contents">
 <h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading"></a></h2>
@@ -96,7 +96,7 @@ GitHub (<a class="reference external" href="https://github.com/SunPengChuan/wgdi
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="Usage.html">Usage</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="dotplot.html">Dotplot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="collinearity.html">Improved collinearity</a></li>
 <li class="toctree-l2"><a class="reference internal" href="ks.html">Non-synonymous (Ka) and synonymous (Ks)</a></li>
@@ -112,6 +112,8 @@ GitHub (<a class="reference external" href="https://github.com/SunPengChuan/wgdi
 <li class="toctree-l2"><a class="reference internal" href="karyotype_mapping.html">karyotype_mapping</a></li>
 <li class="toctree-l2"><a class="reference internal" href="karyotype.html">Karyotype</a></li>
 <li class="toctree-l2"><a class="reference internal" href="shared_fusions.html">Shared_fusions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fusion_positions_database.html">Fusion_positions_database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fusion_detetion.html">Fusions_detection</a></li>
 <li class="toctree-l2"><a class="reference internal" href="alignment.html">Alignment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="alignment_tree.html">Alignmenttrees</a></li>
 <li class="toctree-l2"><a class="reference internal" href="retain.html">Retain</a></li>
@@ -119,19 +121,23 @@ GitHub (<a class="reference external" href="https://github.com/SunPengChuan/wgdi
 <li class="toctree-l2"><a class="reference internal" href="circos.html">Circos</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a></li>
 </ul>
 </div>
 </section>
-<section id="citating-wgdi">
-<h2>Citating WGDI<a class="headerlink" href="#citating-wgdi" title="Link to this heading"></a></h2>
-<p>If you use wgdi in your work, please cite:</p>
-<p>Sun, P., Jiao, B., Yang, Y., Shan, L., Li, T., Li, X., … &amp; Liu, J. (2022). WGDI: A user-friendly toolkit for evolutionary analyses of whole-genome duplications and ancestral karyotypes. Molecular plant, 15(12), 1841-1851. <a class="reference external" href="https://doi.org/10.1016/j.molp.2022.10.018">https://doi.org/10.1016/j.molp.2022.10.018</a></p>
+<section id="citing-wgdi">
+<h2>Citing WGDI<a class="headerlink" href="#citing-wgdi" title="Link to this heading"></a></h2>
+<p>If you use WGDI in your work, please cite the following publication:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Sun, P., Jiao, B., Yang, Y., Shan, L., Li, T., Li, X., ... &amp; Liu, J. (2022).
+WGDI: A user-friendly toolkit for evolutionary analyses of whole-genome duplications and ancestral karyotypes.
+Molecular Plant, 15(12), 1841-1851. https://doi.org/10.1016/j.molp.2022.10.018
+</pre></div>
+</div>
 </section>
 <section id="contact">
 <h2>Contact<a class="headerlink" href="#contact" title="Link to this heading"></a></h2>
-<p>If you have any questions or good suggestions , send email via <a class="reference external" href="mailto:sunpengchuan&#37;&#52;&#48;gmail&#46;com">Pengchuan Sun</a>’s mailbox or submit changes on our <a class="reference external" href="https://github.com/SunPengChuan/wgdi">GitHub</a>.</p>
+<p>For any questions or suggestions, feel free to contact Pengchuan Sun via email: <a class="reference external" href="mailto:sunpengchuan&#37;&#52;&#48;gmail&#46;com">sunpengchuan<span>&#64;</span>gmail<span>&#46;</span>com</a> or submit changes on our GitHub repository.</p>
 </section>
 </section>
 
@@ -145,7 +151,7 @@ GitHub (<a class="reference external" href="https://github.com/SunPengChuan/wgdi
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2021, PengChuan Sun.</p>
+    <p>&#169; Copyright 2024, PengChuan Sun.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

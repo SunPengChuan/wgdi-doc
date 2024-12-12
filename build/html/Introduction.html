@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="En" data-content_root="./">
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -15,14 +15,14 @@
   
         <script src="_static/jquery.js?v=5d32c60e"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=2ab17cd4"></script>
-        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/documentation_options.js?v=c6e86fd7"></script>
+        <script src="_static/doctools.js?v=9bcbadda"></script>
         <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Installation" href="Installation.html" />
-    <link rel="prev" title="Welcome to WGDI’s documentation!" href="index.html" /> 
+    <link rel="prev" title="Welcome to WGDI’s Documentation!" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -37,7 +37,7 @@
             WGDI
           </a>
               <div class="version">
-                0.6.5
+                0.7.1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -50,9 +50,9 @@
               <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Usage.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a></li>
 </ul>
 
         </div>
@@ -147,27 +147,39 @@ Such as <code class="docutils literal notranslate"><span class="pre">wgdi</span>
 <td><p>karotype</p></td>
 <td><p>Show genome evolution from reconstructed ancestors</p></td>
 </tr>
-<tr class="row-odd"><td><p>-a</p></td>
+<tr class="row-odd"><td><p>-sf</p></td>
+<td><p>Shared_fusion</p></td>
+<td><p>Quickly find shared fusions between species</p></td>
+</tr>
+<tr class="row-even"><td><p>-fpd</p></td>
+<td><p>Fusion_positions_database</p></td>
+<td><p>Extract the fusion positions dataset</p></td>
+</tr>
+<tr class="row-odd"><td><p>-fd</p></td>
+<td><p>Fusion_detection</p></td>
+<td><p>Determine whether these fusion events occur in other genomes</p></td>
+</tr>
+<tr class="row-even"><td><p>-a</p></td>
 <td><p>Alignment</p></td>
 <td><p>Alignment of hierarchical and event-related gene collinearity</p></td>
 </tr>
-<tr class="row-even"><td><p>-at</p></td>
+<tr class="row-odd"><td><p>-at</p></td>
 <td><p>AlignmentTrees</p></td>
 <td><p>Phylogenetic trees constructed by collinear genes</p></td>
 </tr>
-<tr class="row-odd"><td><p>-p</p></td>
+<tr class="row-even"><td><p>-p</p></td>
 <td><p>P-index</p></td>
 <td><p>Polyploidy-index characterize the degree of divergence among subgenomes of a polyploidy</p></td>
 </tr>
-<tr class="row-even"><td><p>-r</p></td>
+<tr class="row-odd"><td><p>-r</p></td>
 <td><p>Retain</p></td>
 <td><p>Show subgenomes in gene retention or genome fractionation</p></td>
 </tr>
-<tr class="row-odd"><td><p>-ci</p></td>
+<tr class="row-even"><td><p>-ci</p></td>
 <td><p>Circos</p></td>
 <td><p>A simple way to run circos</p></td>
 </tr>
-<tr class="row-even"><td><p>-conf</p></td>
+<tr class="row-odd"><td><p>-conf</p></td>
 <td><p>Configure</p></td>
 <td><p>Display and modify the environment variable</p></td>
 </tr>
@@ -179,14 +191,14 @@ Such as <code class="docutils literal notranslate"><span class="pre">wgdi</span>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to WGDI’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to WGDI’s Documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="Installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2021, PengChuan Sun.</p>
+    <p>&#169; Copyright 2024, PengChuan Sun.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

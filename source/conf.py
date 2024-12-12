@@ -20,11 +20,11 @@
 # -- Project information -----------------------------------------------------
 
 project = 'WGDI'
-copyright = '2021, PengChuan Sun'
+copyright = '2024, PengChuan Sun'
 author = 'PengChuan Sun'
 
 # The short X.Y version
-version = '0.6.5'
+version = '0.7.1'
 # The full version, including alpha/beta/rc tags
 release = 'latest'
 
@@ -49,8 +49,7 @@ templates_path = ['_templates']
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-# source_suffix = ['.rst', '.md']
-source_suffix = ['.rst', '.md']
+source_suffix = {'.rst': 'restructuredtext', '.md': 'restructuredtext'}
 
 # The master toctree document.
 master_doc = 'index'
@@ -60,7 +59,7 @@ master_doc = 'index'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = 'En'
+language = 'en'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="En" data-content_root="./">
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -15,8 +15,8 @@
   
         <script src="_static/jquery.js?v=5d32c60e"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=2ab17cd4"></script>
-        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/documentation_options.js?v=c6e86fd7"></script>
+        <script src="_static/doctools.js?v=9bcbadda"></script>
         <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -37,7 +37,7 @@
             WGDI
           </a>
               <div class="version">
-                0.6.5
+                0.7.1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -66,6 +66,8 @@
 <li class="toctree-l2"><a class="reference internal" href="karyotype_mapping.html">karyotype_mapping</a></li>
 <li class="toctree-l2"><a class="reference internal" href="karyotype.html">Karyotype</a></li>
 <li class="toctree-l2"><a class="reference internal" href="shared_fusions.html">Shared_fusions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fusion_positions_database.html">Fusion_positions_database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fusion_detetion.html">Fusions_detection</a></li>
 <li class="toctree-l2"><a class="reference internal" href="alignment.html">Alignment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="alignment_tree.html">Alignmenttrees</a></li>
 <li class="toctree-l2"><a class="reference internal" href="retain.html">Retain</a></li>
@@ -73,8 +75,8 @@
 <li class="toctree-l2"><a class="reference internal" href="circos.html">Circos</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a></li>
 </ul>
 
         </div>
@@ -93,7 +95,7 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
       <li class="breadcrumb-item active">Usage</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/usage.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Usage.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -121,6 +123,8 @@
 <li class="toctree-l1"><a class="reference internal" href="karyotype_mapping.html">karyotype_mapping</a></li>
 <li class="toctree-l1"><a class="reference internal" href="karyotype.html">Karyotype</a></li>
 <li class="toctree-l1"><a class="reference internal" href="shared_fusions.html">Shared_fusions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fusion_positions_database.html">Fusion_positions_database</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fusion_detetion.html">Fusions_detection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="alignment.html">Alignment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="alignment_tree.html">Alignmenttrees</a></li>
 <li class="toctree-l1"><a class="reference internal" href="retain.html">Retain</a></li>
@@ -235,6 +239,30 @@ We will no longer explain these in this documentation.</p>
 </tr>
 </tbody>
 </table>
+<ul class="simple">
+<li><p>Fusino postions file</p></li>
+</ul>
+<p>Required documents for shared fusion events</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p>Column</p></td>
+<td><p>Information</p></td>
+<td><p>Explanation</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Chr</p></td>
+<td><p>Chromosome number</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Breakpoint</p></td>
+<td><p>The breakpoints of fusions, with multiple breakpoints listed on separate lines.</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Mark</p></td>
+<td><p>The unique marks of unique fusions</p></td>
+</tr>
+</tbody>
+</table>
 <p><strong>Tips</strong></p>
 <ul class="simple">
 <li><p>You can use <code class="docutils literal notranslate"><span class="pre">wgdi</span> <span class="pre">-conf</span> <span class="pre">?</span> <span class="pre">&gt;</span> <span class="pre">total.conf</span></code> generates a <strong>total.conf</strong> file with all parameters, and when you modify the parameters and run WGDI, WGDI will only read the parameters corresponding to the total.conf file to execute your command.</p></li>
@@ -254,7 +282,7 @@ We will no longer explain these in this documentation.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2021, PengChuan Sun.</p>
+    <p>&#169; Copyright 2024, PengChuan Sun.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

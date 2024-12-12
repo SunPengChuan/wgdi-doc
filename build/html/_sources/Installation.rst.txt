@@ -36,9 +36,9 @@ After you download and install the above packages. You can run ``wgdi -conf help
 
    [ini]
    mafft_path = C:\bio\mafft-win\mafft.bat
-   pal2nal_path = C:\bio\[pal2nal.v14\pal2nal.pl
+   pal2nal_path = C:\bio\pal2nal.v14\pal2nal.pl
    yn00_path = C:\bio\paml4.9j\bin\yn00.exe
-   muscle_path = C:\bio\muscle3.8.31_i86win32.exe
+   muscle_path = C:\bio\muscle-win64.v5.3.exe
 
 Add the directory of your software to the conf.ini file, and then execute ``wgdi -conf conf.ini`` to complete the configuration path.
  

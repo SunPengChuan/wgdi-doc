@@ -45,6 +45,12 @@ Such as ``wgdi -d your.conf``.  In the following, we will describe in detail the
 +---------+---------------------------+-------------------------------------------------------------------------------------------+
 | -k      | karotype                  | Show genome evolution from reconstructed ancestors                                        |
 +---------+---------------------------+-------------------------------------------------------------------------------------------+
+| -sf     | Shared_fusion             | Quickly find shared fusions between species                                               |
++---------+---------------------------+-------------------------------------------------------------------------------------------+
+| -fpd    | Fusion_positions_database | Extract the fusion positions dataset                                                      |
++---------+---------------------------+-------------------------------------------------------------------------------------------+
+| -fd     | Fusion_detection          | Determine whether these fusion events occur in other genomes                              |
++---------+---------------------------+-------------------------------------------------------------------------------------------+
 | -a      | Alignment                 | Alignment of hierarchical and event-related gene collinearity                             |
 +---------+---------------------------+-------------------------------------------------------------------------------------------+
 | -at     | AlignmentTrees            | Phylogenetic trees constructed by collinear genes                                         |

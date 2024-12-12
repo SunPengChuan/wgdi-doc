@@ -30,6 +30,10 @@ mg               Type: **int** , **int**   |  Default: **40**, **40**
 
                  The maximum gap(mg) value is an important parameter for detecting collinear regions.
 ---------------- ------------------------------------------------------------------------ 
+comparison       Type: { **genomes**, **chromosomes** }  |   Default: **genomes**  
+
+                 When comparing with the fusion positions database, use 'chromosomes'; otherwise, use 'genomes'.
+---------------- ------------------------------------------------------------------------ 
 pvalue           Type: **float**  |    Default: **1**
 
                  Evaluate the compactness and uniqueness of collinear blocks, the range is 0-1, and the better collinearity range is 0-0.2.
@@ -58,14 +62,15 @@ Use command to enter the folder ``wgdi -icl ? >> total.conf`` Take out the param
    lens2 = lens2 file
    blast = blast file
    blast_reverse = false
+   comparison = genomes
    multiple  = 1
    process = 8
    evalue = 1e-5
    score = 100
-   grading = 50,40,25
-   mg = 40,40
-   pvalue = 0.2
-   repeat_number = 10
+   grading = 50,30,25
+   mg = 25,25
+   pvalue = 1
+   repeat_number = 20
    positon = order
    savefile = collinearity file
 

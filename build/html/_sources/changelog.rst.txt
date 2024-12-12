@@ -1,7 +1,32 @@
 Changelog
-------------
+---------
+
+.. rubric:: 0.7.1
+
+* Added extract the fusion positions dataset (-fpd).
+* Added determine whether these fusion events occur in other genomes (-fd).
+* Improved the karyotype_mapping (-km) effect.
+* Fixed the problem caused by the Python version, now it is compatible with version 3.12.
+
+.. rubric:: 0.6.5
+
+* Fixed some issues (-sf).
+* Added new tips to avoid some errors.
+
+.. rubric:: 0.6.4
+
+* Fixed the problem caused by the Python version, now it is compatible with version 3.11.3.
+
+.. rubric:: 0.6.3
+    
+* Fixed some issues (-ks, -sf).
+
+.. rubric:: 0.6.2
+
+* Added find shared fusions between species (-sf).
 
 .. rubric:: 0.6.1
+
 * Fixed issue with alignment (-a). Only version 0.6.0 has this bug.
 
 .. rubric:: 0.6.0

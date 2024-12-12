@@ -20,6 +20,8 @@ We support the use of **WGDI** to complete the work on the icon number.
    karyotype_mapping
    karyotype
    shared_fusions
+   fusion_positions_database
+   fusion_detetion
    alignment
    alignment_tree
    retain
@@ -82,6 +84,19 @@ Column    Information Explanation
 4         Color       These protochromosomes with different colors
 5         Subgenomes  Subgenomes according to protochromosomes
 ========= =========== =============================================================
+
+* Fusino postions file
+
+Required documents for shared fusion events
+
+.. tabularcolumns:: column spec
+
+========= =========== ===============================================================================
+Column    Information Explanation                   
+1         Chr         Chromosome number
+2         Breakpoint  The breakpoints of fusions, with multiple breakpoints listed on separate lines.
+3         Mark        The unique marks of unique fusions
+========= =========== ===============================================================================
 
 **Tips**
 
