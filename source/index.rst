@@ -25,7 +25,7 @@ Table of Contents
 
    Introduction
    Installation
-   Usage
+   usage
    Examples
    Changelog
 
