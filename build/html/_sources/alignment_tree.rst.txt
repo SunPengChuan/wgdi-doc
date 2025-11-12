@@ -48,6 +48,10 @@ align_software   Type:{ **muscle**, **mafft** }  |   Default: **muscle**
 
                  Software of multiple sequence alignment.
 ---------------- ------------------------------------------------------------------------
+threads          Type:{ **int**, **AUTO** }  |   Default: **1**
+
+                 Number of cores required for running IQ-TREE.
+---------------- ------------------------------------------------------------------------
 tree_software    Type:{ **iqtree**, **fasttree** }  |   Default: **iqtree**
 
                  Software of constructing phylogenetic trees.
@@ -85,6 +89,7 @@ Afterwards, use the ASTRAL command ``java -jar /path/astral.5.7.7.jar -i trees_f
    codon_positon = 1,2,3  (1,2 mean codon1&2; 1,2,3 mean no codon removed)
    trees_file =  trees (.nwk)
    align_software = mafft
+   threads = 1
    tree_software =  (iqtree,fasttree)
    model = MFP
    trimming =  trimal

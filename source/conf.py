@@ -7,9 +7,9 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'WGDI'
-copyright = '2024, Pengchuan Sun'
+copyright = '2019, Pengchuan Sun'
 author = 'Pengchuan Sun'
-release = '0.71'
+release = '0.75'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration

@@ -85,18 +85,19 @@ Column    Information Explanation
 5         Subgenomes  Subgenomes according to protochromosomes
 ========= =========== =============================================================
 
-* Fusino postions file
+* Fusinon postions file
 
 Required documents for shared fusion events
 
 .. tabularcolumns:: column spec
 
-========= =========== ===============================================================================
-Column    Information Explanation                   
-1         Chr         Chromosome number
-2         Breakpoint  The breakpoints of fusions, with multiple breakpoints listed on separate lines.
-3         Mark        The unique marks of unique fusions
-========= =========== ===============================================================================
+========= =================== ===============================================================================
+Column    Information         Explanation                   
+1         Chr                 Chromosome number
+2         Breakpoint          The breakpoints of fusions, with multiple breakpoints listed on separate lines.
+3         NumGeneSetsPerSide  The number of genes within a single synteny block that spans across both sides of the fusion breakpoints.
+4         Mark                The unique marks of unique fusions
+========= =================== ===============================================================================
 
 **Tips**
 
